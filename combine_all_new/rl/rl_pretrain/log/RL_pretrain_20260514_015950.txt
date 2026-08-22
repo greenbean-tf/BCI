@@ -1,0 +1,1777 @@
+[Bandit] NeuralContextualBandit 初始化完成
+  device            =cpu
+  nActions          =4
+  contextDim        =4
+  epsilon           =0.5
+  lambdaCost        =0.1
+  mu                =0.3
+  alp_ent_hyp       =1.0
+  weightEntropy     =0.5
+  rewardClipMin     =-2.0
+  rewardClipMax     =2.0
+
+[Bandit UpdateScheduler] 初始化完成
+ scoreThreshold=7.0
+
+[RL_interface] 初始化完成
+
+[Bandit UpdateScheduler] 初始化完成
+ scoreThreshold=15.0
+
+[RL_pretrain RLPretrainer] 初始化完成
+  pretrainEpochs    =1
+  ewmaThreshold     =0.3 (EWMA alpha=0.3)
+  scoreThreshold    =15.0
+  minRetainRatio    =0.5
+  baseModelPath     =/mnt/left/home/2025/percytsai/BCI_CS_Project/2026_BCI_-/combine_all_new/rl/rl_pretrain/train.pth
+  device            =cuda
+  dryRun            =False
+
+Found 2 .pt files
+
+[Epoch 1/1]
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=2.0/15.0, total=1, hq=1, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.0/15.0, total=2, hq=1, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=4.0/15.0, total=3, hq=2, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=6.0/15.0, total=4, hq=3, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=8.0/15.0, total=5, hq=4, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=8.0/15.0, total=6, hq=4, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=10.0/15.0, total=7, hq=5, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=12.0/15.0, total=8, hq=6, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=14.0/15.0, total=9, hq=7, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=16.0/15.0, total=10, hq=8, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=18.0/15.0, total=11, hq=9, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=18.0/15.0, total=12, hq=9, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=18.0/15.0, total=13, hq=9, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=18.0/15.0, total=14, hq=9, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=20.0/15.0, total=15, hq=10, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=22.0/15.0, total=16, hq=11, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=24.0/15.0, total=17, hq=12, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=26.0/15.0, total=18, hq=13, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=28.0/15.0, total=19, hq=14, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=30.0/15.0, total=20, hq=15, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=32.0/15.0, total=21, hq=16, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=34.0/15.0, total=22, hq=17, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=36.0/15.0, total=23, hq=18, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=38.0/15.0, total=24, hq=19, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=40.0/15.0, total=25, hq=20, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=42.0/15.0, total=26, hq=21, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=44.0/15.0, total=27, hq=22, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=46.0/15.0, total=28, hq=23, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=48.0/15.0, total=29, hq=24, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=50.0/15.0, total=30, hq=25, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=52.0/15.0, total=31, hq=26, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=54.0/15.0, total=32, hq=27, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=56.0/15.0, total=33, hq=28, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=58.0/15.0, total=34, hq=29, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=60.0/15.0, total=35, hq=30, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=62.0/15.0, total=36, hq=31, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=64.0/15.0, total=37, hq=32, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=66.0/15.0, total=38, hq=33, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=68.0/15.0, total=39, hq=34, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=70.0/15.0, total=40, hq=35, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=72.0/15.0, total=41, hq=36, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=72.0/15.0, total=42, hq=36, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=74.0/15.0, total=43, hq=37, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=76.0/15.0, total=44, hq=38, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=78.0/15.0, total=45, hq=39, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=80.0/15.0, total=46, hq=40, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=82.0/15.0, total=47, hq=41, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=84.0/15.0, total=48, hq=42, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=86.0/15.0, total=49, hq=43, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=86.0/15.0, total=50, hq=43, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=88.0/15.0, total=51, hq=44, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=90.0/15.0, total=52, hq=45, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=92.0/15.0, total=53, hq=46, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=94.0/15.0, total=54, hq=47, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=96.0/15.0, total=55, hq=48, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=98.0/15.0, total=56, hq=49, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=100.0/15.0, total=57, hq=50, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=102.0/15.0, total=58, hq=51, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=104.0/15.0, total=59, hq=52, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=106.0/15.0, total=60, hq=53, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=108.0/15.0, total=61, hq=54, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=110.0/15.0, total=62, hq=55, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=112.0/15.0, total=63, hq=56, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=114.0/15.0, total=64, hq=57, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=116.0/15.0, total=65, hq=58, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=118.0/15.0, total=66, hq=59, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=120.0/15.0, total=67, hq=60, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=122.0/15.0, total=68, hq=61, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=124.0/15.0, total=69, hq=62, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=126.0/15.0, total=70, hq=63, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=128.0/15.0, total=71, hq=64, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=130.0/15.0, total=72, hq=65, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=132.0/15.0, total=73, hq=66, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=134.0/15.0, total=74, hq=67, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=136.0/15.0, total=75, hq=68, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=138.0/15.0, total=76, hq=69, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=140.0/15.0, total=77, hq=70, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=140.0/15.0, total=78, hq=70, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=142.0/15.0, total=79, hq=71, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=144.0/15.0, total=80, hq=72, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=146.0/15.0, total=81, hq=73, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=148.0/15.0, total=82, hq=74, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=150.0/15.0, total=83, hq=75, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=152.0/15.0, total=84, hq=76, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=154.0/15.0, total=85, hq=77, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=156.0/15.0, total=86, hq=78, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=158.0/15.0, total=87, hq=79, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=160.0/15.0, total=88, hq=80, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=162.0/15.0, total=89, hq=81, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=164.0/15.0, total=90, hq=82, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=164.0/15.0, total=91, hq=82, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=166.0/15.0, total=92, hq=83, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=168.0/15.0, total=93, hq=84, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=170.0/15.0, total=94, hq=85, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=172.0/15.0, total=95, hq=86, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=174.0/15.0, total=96, hq=87, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=176.0/15.0, total=97, hq=88, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=178.0/15.0, total=98, hq=89, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=180.0/15.0, total=99, hq=90, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=182.0/15.0, total=100, hq=91, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=184.0/15.0, total=101, hq=92, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=186.0/15.0, total=102, hq=93, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=188.0/15.0, total=103, hq=94, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=190.0/15.0, total=104, hq=95, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=192.0/15.0, total=105, hq=96, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=194.0/15.0, total=106, hq=97, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=196.0/15.0, total=107, hq=98, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=198.0/15.0, total=108, hq=99, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=200.0/15.0, total=109, hq=100, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=202.0/15.0, total=110, hq=101, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=204.0/15.0, total=111, hq=102, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=206.0/15.0, total=112, hq=103, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=208.0/15.0, total=113, hq=104, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=210.0/15.0, total=114, hq=105, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=212.0/15.0, total=115, hq=106, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=214.0/15.0, total=116, hq=107, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=216.0/15.0, total=117, hq=108, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=218.0/15.0, total=118, hq=109, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=220.0/15.0, total=119, hq=110, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=222.0/15.0, total=120, hq=111, shouldUpdate=True
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=222.0/15.0, total=121, hq=111, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=224.0/15.0, total=122, hq=112, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=226.0/15.0, total=123, hq=113, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=228.0/15.0, total=124, hq=114, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=230.0/15.0, total=125, hq=115, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=232.0/15.0, total=126, hq=116, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=234.0/15.0, total=127, hq=117, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=236.0/15.0, total=128, hq=118, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=238.0/15.0, total=129, hq=119, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=240.0/15.0, total=130, hq=120, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=242.0/15.0, total=131, hq=121, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=244.0/15.0, total=132, hq=122, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=246.0/15.0, total=133, hq=123, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=248.0/15.0, total=134, hq=124, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=250.0/15.0, total=135, hq=125, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=252.0/15.0, total=136, hq=126, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=254.0/15.0, total=137, hq=127, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=256.0/15.0, total=138, hq=128, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=258.0/15.0, total=139, hq=129, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=260.0/15.0, total=140, hq=130, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=262.0/15.0, total=141, hq=131, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=264.0/15.0, total=142, hq=132, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=266.0/15.0, total=143, hq=133, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=268.0/15.0, total=144, hq=134, shouldUpdate=True
+
+[INFO] Loaded checkpoint from /mnt/left/home/2025/percytsai/BCI_CS_Project/2026_BCI_-/combine_all_new/rl/rl_pretrain/train.pth
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=1
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=1
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=2
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=3
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.55, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=4
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=2
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=5
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=6
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.54, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=7
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.55, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=8
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=9
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=3
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.70, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=4
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=5
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.21, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=10
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=11
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.31, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=12
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.20, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=13
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=14
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=15
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.27, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=16
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.18, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=17
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=18
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.58, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=19
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=20
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=21
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.29, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=22
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.45, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=23
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=24
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=25
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.21, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=26
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.37, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=27
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=28
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=29
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=30
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.24, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=31
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.55, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=32
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=33
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.55, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=34
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.45, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=35
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.52, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=36
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.65, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=6
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=37
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.33, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=38
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=39
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.37, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=40
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.21, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=41
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.55, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=42
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.28, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=43
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.64, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=7
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.50, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=44
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.24, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=45
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.38, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=46
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.33, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=47
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.29, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=48
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.40, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=49
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.24, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=50
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=51
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=52
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.55, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=53
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.21, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=54
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=55
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.30, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=56
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.33, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=57
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.42, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=58
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.52, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=59
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=60
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.18, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=61
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.48, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=62
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.34, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=63
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.27, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=64
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.51, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=65
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=66
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=67
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.19, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=68
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.24, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=69
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.25, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=70
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.67, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=8
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.26, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=71
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.58, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=72
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.38, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=73
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.57, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=74
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.34, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=75
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.48, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=76
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=77
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=78
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.27, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=79
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.25, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=80
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.42, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=81
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=82
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.80, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=9
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.36, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=83
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=84
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.41, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=85
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.20, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=86
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=87
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=88
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=89
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.46, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=90
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.19, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=91
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.27, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=92
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.28, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=93
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=94
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.50, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=95
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.20, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=96
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=97
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=98
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=99
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=100
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=101
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.24, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=102
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=103
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=104
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.39, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=105
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.32, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=106
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.19, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=107
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=108
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.33, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=109
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=110
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.26, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=111
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.66, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=DISCARD, reward=-0.1000, buffer_size=10
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.34, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=112
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.41, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=113
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=114
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.18, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=115
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=116
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=117
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.51, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=118
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.29, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=119
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.49, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=120
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.29, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=121
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=122
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.18, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=123
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.32, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=124
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.30, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=125
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.22, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=126
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=127
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.29, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=128
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=129
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=130
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=131
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.28, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=132
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.49, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=133
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.27, gamma=1.0 deltaLoss=0.0000, timeCost=1.00, lqp=0.0000 raw_reward=-0.1000, clipped_reward=-0.1000
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1000, buffer_size=134
+[RL_pretrain DEBUG] EWMA reward: -0.1000
+[RL_pretrain INFO] Update #1: total_Update_trail=144 deltaLoss=0.0000 ewma=-0.1000
+[Bandit UpdateScheduler] reset: 清除累計分數 268.0
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=0.0/15.0, total=1, hq=0, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=2.0/15.0, total=2, hq=1, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=4.0/15.0, total=3, hq=2, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=6.0/15.0, total=4, hq=3, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=8.0/15.0, total=5, hq=4, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=10.0/15.0, total=6, hq=5, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=12.0/15.0, total=7, hq=6, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=14.0/15.0, total=8, hq=7, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=16.0/15.0, total=9, hq=8, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=18.0/15.0, total=10, hq=9, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=20.0/15.0, total=11, hq=10, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=22.0/15.0, total=12, hq=11, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=24.0/15.0, total=13, hq=12, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=26.0/15.0, total=14, hq=13, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=28.0/15.0, total=15, hq=14, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=30.0/15.0, total=16, hq=15, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=32.0/15.0, total=17, hq=16, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=34.0/15.0, total=18, hq=17, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=36.0/15.0, total=19, hq=18, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=38.0/15.0, total=20, hq=19, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=40.0/15.0, total=21, hq=20, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=42.0/15.0, total=22, hq=21, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=44.0/15.0, total=23, hq=22, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=46.0/15.0, total=24, hq=23, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=48.0/15.0, total=25, hq=24, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=50.0/15.0, total=26, hq=25, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=52.0/15.0, total=27, hq=26, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=54.0/15.0, total=28, hq=27, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=56.0/15.0, total=29, hq=28, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=58.0/15.0, total=30, hq=29, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=60.0/15.0, total=31, hq=30, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=62.0/15.0, total=32, hq=31, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=64.0/15.0, total=33, hq=32, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=66.0/15.0, total=34, hq=33, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=68.0/15.0, total=35, hq=34, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=70.0/15.0, total=36, hq=35, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=72.0/15.0, total=37, hq=36, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=74.0/15.0, total=38, hq=37, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=76.0/15.0, total=39, hq=38, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=78.0/15.0, total=40, hq=39, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=80.0/15.0, total=41, hq=40, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=82.0/15.0, total=42, hq=41, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=84.0/15.0, total=43, hq=42, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=86.0/15.0, total=44, hq=43, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=88.0/15.0, total=45, hq=44, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=90.0/15.0, total=46, hq=45, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=92.0/15.0, total=47, hq=46, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=94.0/15.0, total=48, hq=47, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=96.0/15.0, total=49, hq=48, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=98.0/15.0, total=50, hq=49, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=100.0/15.0, total=51, hq=50, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=102.0/15.0, total=52, hq=51, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=104.0/15.0, total=53, hq=52, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=106.0/15.0, total=54, hq=53, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=108.0/15.0, total=55, hq=54, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=110.0/15.0, total=56, hq=55, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=112.0/15.0, total=57, hq=56, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=114.0/15.0, total=58, hq=57, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=116.0/15.0, total=59, hq=58, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=118.0/15.0, total=60, hq=59, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=120.0/15.0, total=61, hq=60, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=122.0/15.0, total=62, hq=61, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=124.0/15.0, total=63, hq=62, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=126.0/15.0, total=64, hq=63, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=128.0/15.0, total=65, hq=64, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=130.0/15.0, total=66, hq=65, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=132.0/15.0, total=67, hq=66, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=134.0/15.0, total=68, hq=67, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=136.0/15.0, total=69, hq=68, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=138.0/15.0, total=70, hq=69, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=140.0/15.0, total=71, hq=70, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=142.0/15.0, total=72, hq=71, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=144.0/15.0, total=73, hq=72, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=146.0/15.0, total=74, hq=73, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=148.0/15.0, total=75, hq=74, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=150.0/15.0, total=76, hq=75, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=152.0/15.0, total=77, hq=76, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=154.0/15.0, total=78, hq=77, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=156.0/15.0, total=79, hq=78, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=158.0/15.0, total=80, hq=79, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=160.0/15.0, total=81, hq=80, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=162.0/15.0, total=82, hq=81, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=164.0/15.0, total=83, hq=82, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=166.0/15.0, total=84, hq=83, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=168.0/15.0, total=85, hq=84, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=170.0/15.0, total=86, hq=85, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=172.0/15.0, total=87, hq=86, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=174.0/15.0, total=88, hq=87, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=176.0/15.0, total=89, hq=88, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=178.0/15.0, total=90, hq=89, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=180.0/15.0, total=91, hq=90, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=182.0/15.0, total=92, hq=91, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=184.0/15.0, total=93, hq=92, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=186.0/15.0, total=94, hq=93, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=188.0/15.0, total=95, hq=94, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=190.0/15.0, total=96, hq=95, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=192.0/15.0, total=97, hq=96, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=194.0/15.0, total=98, hq=97, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=196.0/15.0, total=99, hq=98, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=198.0/15.0, total=100, hq=99, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=200.0/15.0, total=101, hq=100, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=202.0/15.0, total=102, hq=101, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=204.0/15.0, total=103, hq=102, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=206.0/15.0, total=104, hq=103, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=208.0/15.0, total=105, hq=104, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=210.0/15.0, total=106, hq=105, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=212.0/15.0, total=107, hq=106, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=214.0/15.0, total=108, hq=107, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=216.0/15.0, total=109, hq=108, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=218.0/15.0, total=110, hq=109, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=220.0/15.0, total=111, hq=110, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=222.0/15.0, total=112, hq=111, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=224.0/15.0, total=113, hq=112, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=226.0/15.0, total=114, hq=113, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=228.0/15.0, total=115, hq=114, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=230.0/15.0, total=116, hq=115, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=232.0/15.0, total=117, hq=116, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=234.0/15.0, total=118, hq=117, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=236.0/15.0, total=119, hq=118, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=238.0/15.0, total=120, hq=119, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=240.0/15.0, total=121, hq=120, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=242.0/15.0, total=122, hq=121, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=244.0/15.0, total=123, hq=122, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=246.0/15.0, total=124, hq=123, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=248.0/15.0, total=125, hq=124, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=250.0/15.0, total=126, hq=125, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=252.0/15.0, total=127, hq=126, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=254.0/15.0, total=128, hq=127, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=256.0/15.0, total=129, hq=128, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=258.0/15.0, total=130, hq=129, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=260.0/15.0, total=131, hq=130, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=262.0/15.0, total=132, hq=131, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=264.0/15.0, total=133, hq=132, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=266.0/15.0, total=134, hq=133, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=268.0/15.0, total=135, hq=134, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=270.0/15.0, total=136, hq=135, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=272.0/15.0, total=137, hq=136, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=274.0/15.0, total=138, hq=137, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=276.0/15.0, total=139, hq=138, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=278.0/15.0, total=140, hq=139, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=280.0/15.0, total=141, hq=140, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=282.0/15.0, total=142, hq=141, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=284.0/15.0, total=143, hq=142, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=286.0/15.0, total=144, hq=143, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=288.0/15.0, total=145, hq=144, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=290.0/15.0, total=146, hq=145, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=292.0/15.0, total=147, hq=146, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=294.0/15.0, total=148, hq=147, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=296.0/15.0, total=149, hq=148, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=298.0/15.0, total=150, hq=149, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=300.0/15.0, total=151, hq=150, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=302.0/15.0, total=152, hq=151, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=304.0/15.0, total=153, hq=152, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=306.0/15.0, total=154, hq=153, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=308.0/15.0, total=155, hq=154, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=310.0/15.0, total=156, hq=155, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=312.0/15.0, total=157, hq=156, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=314.0/15.0, total=158, hq=157, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=316.0/15.0, total=159, hq=158, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=318.0/15.0, total=160, hq=159, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=320.0/15.0, total=161, hq=160, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=322.0/15.0, total=162, hq=161, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=324.0/15.0, total=163, hq=162, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=326.0/15.0, total=164, hq=163, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=328.0/15.0, total=165, hq=164, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=330.0/15.0, total=166, hq=165, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=332.0/15.0, total=167, hq=166, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=334.0/15.0, total=168, hq=167, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=336.0/15.0, total=169, hq=168, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=338.0/15.0, total=170, hq=169, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=340.0/15.0, total=171, hq=170, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=342.0/15.0, total=172, hq=171, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=344.0/15.0, total=173, hq=172, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=346.0/15.0, total=174, hq=173, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=348.0/15.0, total=175, hq=174, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=350.0/15.0, total=176, hq=175, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=352.0/15.0, total=177, hq=176, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=354.0/15.0, total=178, hq=177, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=356.0/15.0, total=179, hq=178, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=358.0/15.0, total=180, hq=179, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=360.0/15.0, total=181, hq=180, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=362.0/15.0, total=182, hq=181, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=364.0/15.0, total=183, hq=182, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=366.0/15.0, total=184, hq=183, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=368.0/15.0, total=185, hq=184, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=370.0/15.0, total=186, hq=185, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=372.0/15.0, total=187, hq=186, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=374.0/15.0, total=188, hq=187, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=376.0/15.0, total=189, hq=188, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=378.0/15.0, total=190, hq=189, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=380.0/15.0, total=191, hq=190, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=382.0/15.0, total=192, hq=191, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=384.0/15.0, total=193, hq=192, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=386.0/15.0, total=194, hq=193, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=388.0/15.0, total=195, hq=194, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=390.0/15.0, total=196, hq=195, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=392.0/15.0, total=197, hq=196, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=394.0/15.0, total=198, hq=197, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=396.0/15.0, total=199, hq=198, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=398.0/15.0, total=200, hq=199, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=400.0/15.0, total=201, hq=200, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=402.0/15.0, total=202, hq=201, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=404.0/15.0, total=203, hq=202, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=406.0/15.0, total=204, hq=203, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=408.0/15.0, total=205, hq=204, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=410.0/15.0, total=206, hq=205, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=412.0/15.0, total=207, hq=206, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=414.0/15.0, total=208, hq=207, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=416.0/15.0, total=209, hq=208, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=418.0/15.0, total=210, hq=209, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=420.0/15.0, total=211, hq=210, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=422.0/15.0, total=212, hq=211, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=424.0/15.0, total=213, hq=212, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=426.0/15.0, total=214, hq=213, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=428.0/15.0, total=215, hq=214, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=430.0/15.0, total=216, hq=215, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=432.0/15.0, total=217, hq=216, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=434.0/15.0, total=218, hq=217, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=436.0/15.0, total=219, hq=218, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=438.0/15.0, total=220, hq=219, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=440.0/15.0, total=221, hq=220, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=442.0/15.0, total=222, hq=221, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=444.0/15.0, total=223, hq=222, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=446.0/15.0, total=224, hq=223, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=448.0/15.0, total=225, hq=224, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=450.0/15.0, total=226, hq=225, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=452.0/15.0, total=227, hq=226, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=454.0/15.0, total=228, hq=227, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=456.0/15.0, total=229, hq=228, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=458.0/15.0, total=230, hq=229, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=460.0/15.0, total=231, hq=230, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=462.0/15.0, total=232, hq=231, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=464.0/15.0, total=233, hq=232, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=466.0/15.0, total=234, hq=233, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=468.0/15.0, total=235, hq=234, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=470.0/15.0, total=236, hq=235, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=472.0/15.0, total=237, hq=236, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=474.0/15.0, total=238, hq=237, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=476.0/15.0, total=239, hq=238, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=478.0/15.0, total=240, hq=239, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=480.0/15.0, total=241, hq=240, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=482.0/15.0, total=242, hq=241, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=484.0/15.0, total=243, hq=242, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=486.0/15.0, total=244, hq=243, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=488.0/15.0, total=245, hq=244, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=490.0/15.0, total=246, hq=245, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=492.0/15.0, total=247, hq=246, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=494.0/15.0, total=248, hq=247, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=496.0/15.0, total=249, hq=248, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=498.0/15.0, total=250, hq=249, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=500.0/15.0, total=251, hq=250, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=502.0/15.0, total=252, hq=251, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=504.0/15.0, total=253, hq=252, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=506.0/15.0, total=254, hq=253, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=508.0/15.0, total=255, hq=254, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=510.0/15.0, total=256, hq=255, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=512.0/15.0, total=257, hq=256, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=514.0/15.0, total=258, hq=257, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=516.0/15.0, total=259, hq=258, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=518.0/15.0, total=260, hq=259, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=520.0/15.0, total=261, hq=260, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=522.0/15.0, total=262, hq=261, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=524.0/15.0, total=263, hq=262, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=526.0/15.0, total=264, hq=263, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=528.0/15.0, total=265, hq=264, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=530.0/15.0, total=266, hq=265, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=532.0/15.0, total=267, hq=266, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=534.0/15.0, total=268, hq=267, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=536.0/15.0, total=269, hq=268, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=538.0/15.0, total=270, hq=269, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=540.0/15.0, total=271, hq=270, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=542.0/15.0, total=272, hq=271, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=544.0/15.0, total=273, hq=272, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=546.0/15.0, total=274, hq=273, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=548.0/15.0, total=275, hq=274, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=550.0/15.0, total=276, hq=275, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=552.0/15.0, total=277, hq=276, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=554.0/15.0, total=278, hq=277, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=556.0/15.0, total=279, hq=278, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=558.0/15.0, total=280, hq=279, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=560.0/15.0, total=281, hq=280, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=562.0/15.0, total=282, hq=281, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=564.0/15.0, total=283, hq=282, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=566.0/15.0, total=284, hq=283, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=568.0/15.0, total=285, hq=284, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=570.0/15.0, total=286, hq=285, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=572.0/15.0, total=287, hq=286, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=574.0/15.0, total=288, hq=287, shouldUpdate=True
+
+[INFO] Loaded checkpoint from /mnt/left/home/2025/percytsai/BCI_CS_Project/2026_BCI_-/combine_all_new/rl/rl_pretrain/train.pth
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=DISCARD, reward=0.2643, buffer_size=11
+[RL_pretrain DEBUG] EWMA reward: 0.0093
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.42, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=135
+[RL_pretrain DEBUG] EWMA reward: 0.0858
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=136
+[RL_pretrain DEBUG] EWMA reward: 0.1393
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=137
+[RL_pretrain DEBUG] EWMA reward: 0.1768
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=138
+[RL_pretrain DEBUG] EWMA reward: 0.2030
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.20, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=139
+[RL_pretrain DEBUG] EWMA reward: 0.2214
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=140
+[RL_pretrain DEBUG] EWMA reward: 0.2343
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=141
+[RL_pretrain DEBUG] EWMA reward: 0.2433
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=142
+[RL_pretrain DEBUG] EWMA reward: 0.2496
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=143
+[RL_pretrain DEBUG] EWMA reward: 0.2540
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=144
+[RL_pretrain DEBUG] EWMA reward: 0.2571
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=145
+[RL_pretrain DEBUG] EWMA reward: 0.2592
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=146
+[RL_pretrain DEBUG] EWMA reward: 0.2607
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=147
+[RL_pretrain DEBUG] EWMA reward: 0.2618
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=148
+[RL_pretrain DEBUG] EWMA reward: 0.2625
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=149
+[RL_pretrain DEBUG] EWMA reward: 0.2631
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=150
+[RL_pretrain DEBUG] EWMA reward: 0.2634
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=151
+[RL_pretrain DEBUG] EWMA reward: 0.2637
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=152
+[RL_pretrain DEBUG] EWMA reward: 0.2639
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=153
+[RL_pretrain DEBUG] EWMA reward: 0.2640
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=154
+[RL_pretrain DEBUG] EWMA reward: 0.2641
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=155
+[RL_pretrain DEBUG] EWMA reward: 0.2641
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=156
+[RL_pretrain DEBUG] EWMA reward: 0.2642
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=157
+[RL_pretrain DEBUG] EWMA reward: 0.2642
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=158
+[RL_pretrain DEBUG] EWMA reward: 0.2642
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.59, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=159
+[RL_pretrain DEBUG] EWMA reward: 0.2642
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=160
+[RL_pretrain DEBUG] EWMA reward: 0.2642
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=161
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=162
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=163
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=164
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=165
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=166
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=167
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=168
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=169
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=170
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=171
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=172
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=173
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=174
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=175
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=176
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=177
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=178
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=179
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=180
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=181
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=182
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=183
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=184
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=185
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=186
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=187
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=188
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=189
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=190
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=191
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=192
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=193
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=194
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=195
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=196
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=197
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.26, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=198
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=199
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=200
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.19, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=201
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=202
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=203
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=204
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=205
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=206
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=207
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=208
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=209
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=210
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=211
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=212
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.16, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=213
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.18, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=214
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=215
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=216
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=217
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=218
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=219
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=220
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=221
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=222
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=223
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=224
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=225
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=226
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=227
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=228
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=229
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=230
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=231
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=232
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=233
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=234
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=235
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=236
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=237
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=238
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=239
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=240
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=241
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=242
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=243
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=244
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=245
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=246
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=247
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=248
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=249
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=250
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=251
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=252
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=253
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=254
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=255
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=256
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=257
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=258
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=259
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=260
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=261
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=262
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=263
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=264
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=265
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=266
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=267
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=268
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=269
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=270
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=271
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=272
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.14, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=273
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=274
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=275
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=276
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=277
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=278
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=279
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=280
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=281
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=282
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=283
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=284
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=285
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=286
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=287
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=288
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=289
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=290
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=291
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=292
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=293
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=294
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=295
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=296
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=297
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=298
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=299
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=300
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=301
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=302
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=303
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=304
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=305
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=306
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=307
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=308
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=309
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=310
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=311
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.20, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=312
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=313
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=314
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.12, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=315
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=316
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=317
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=318
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=319
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=320
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=321
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=322
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=323
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=324
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=325
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=326
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=327
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=328
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=329
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=330
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=331
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=332
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=333
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=334
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=335
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.25, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=336
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=337
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.15, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=338
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=339
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=340
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=341
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=342
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=343
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=344
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=345
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=346
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=347
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=348
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=349
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=350
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=351
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=352
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=353
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=354
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=355
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=356
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=357
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=358
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=359
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=360
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=361
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=362
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=363
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=364
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=365
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=366
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=367
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=368
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=369
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=370
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=371
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=372
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=373
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=374
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=375
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=376
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=377
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=378
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=379
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=380
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=381
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=382
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.17, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=383
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=384
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=385
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=386
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=387
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=388
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=389
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=390
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.13, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=391
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=392
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=393
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=394
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=395
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=396
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=397
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=398
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=399
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=400
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.18, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=401
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.06, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=402
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=403
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=404
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=405
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=406
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.11, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=407
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=408
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.07, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=409
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=410
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.08, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=411
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=412
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.09, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=413
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=414
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=415
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.02, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=416
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.05, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=417
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.03, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=418
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.04, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=419
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.10, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=420
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.01, gamma=1.0 deltaLoss=-0.3643, timeCost=1.00, lqp=0.0000 raw_reward=0.2643, clipped_reward=0.2643
+[Bandit] update: action=HIGH_WEIGHT, reward=0.2643, buffer_size=421
+[RL_pretrain DEBUG] EWMA reward: 0.2643
+[RL_pretrain INFO] Update #2: total_Update_trail=432 deltaLoss=-0.3643 ewma=0.2643
+[Bandit UpdateScheduler] reset: 清除累計分數 574.0
+[Bandit] NeuralUCB saved to /mnt/left/home/2025/percytsai/BCI_CS_Project/2026_BCI_-/combine_all_new/rl/rl_pretrain/pretrained_bandit.pt
+
+============================================================
+[RL_pretrain INFO] Pretrained Bandit saved: /mnt/left/home/2025/percytsai/BCI_CS_Project/2026_BCI_-/combine_all_new/rl/rl_pretrain/pretrained_bandit.pt
+[RL_pretrain INFO] Total updates: 2
+[RL_pretrain INFO] Final EWMA reward: 0.2643
+[RL_pretrain INFO] History length: 432
+[RL_pretrain INFO] Buffer sizes: [0, 11, 421, 0]
+============================================================

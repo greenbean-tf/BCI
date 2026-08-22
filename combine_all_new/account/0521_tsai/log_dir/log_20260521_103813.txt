@@ -1,0 +1,99 @@
+[INFO] Logged in as: 0521_tsai
+[INFO] Log file: account\0521_tsai\log_dir\log_20260521_103813.txt
+[ExperienceReplayMemory] load_buffer: account\0521_tsai\hq_buffer.pt 不存在，跳過
+[MainController] hq_buffer 路徑: account\0521_tsai\hq_buffer.pt
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 16, N_Class: 4
+song name: Hanami
+now run_zero_level
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 16, N_Class: 4
+[CSV] Start write EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_103835.csv
+song_start_time: 2129.5784234
+song_end_time: 2227.9830717
+[CSV] Saved EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_103835.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_103835.csv']
+檔案已成功儲存至: account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt
+[INFO] pt_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_103835.pt']
+[model_interface] rerun_inference: predictor 模型尚未載入，跳過
+RL_open: True
+name account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=1.0/7.0, total=1, shouldUpdate=False
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=2.0/7.0, total=2, shouldUpdate=False
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=3.0/7.0, total=3, shouldUpdate=False
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=4.0/7.0, total=4, shouldUpdate=False
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=5.0/7.0, total=5, shouldUpdate=False
+[DataLoader] collect_rl: Hit#4: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=6.0/7.0, total=6, shouldUpdate=False
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=7.0/7.0, total=7, shouldUpdate=True
+[DataLoader] collect_rl: Hit#8: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=8.0/7.0, total=8, shouldUpdate=True
+[DataLoader] collect_rl: Hit#9: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=9.0/7.0, total=9, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=10.0/7.0, total=10, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=11.0/7.0, total=11, shouldUpdate=True
+[DataLoader] collect_rl: Hit#14: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=12.0/7.0, total=12, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[DataLoader] collect_rl 完成: 12 筆記錄, shouldUpdate=True
+[DataLoader] prepare_datasets_RL_v2: train=459, valid=153, replay=0, new_hq=12
+process data finish
+save_dir account\0521_tsai\model\Calibed_Model_v001
+
+[INFO] Loaded checkpoint from account\0521_tsai\model\base_model\pretrain_DL_4class.pth
+[TCP] Received: training@@@Epoch 1/10 - loss: 1.8545, acc: 0.3442, val_loss: 1.5664, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 2/10 - loss: 1.7550, acc: 0.3769, val_loss: 1.5584, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 3/10 - loss: 1.7805, acc: 0.3922, val_loss: 1.5390, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 4/10 - loss: 1.8145, acc: 0.3486, val_loss: 1.6035, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 5/10 - loss: 1.8375, acc: 0.3617, val_loss: 1.5541, val_acc: 0.4118
+[TCP] Received: training@@@Epoch 6/10 - loss: 1.7393, acc: 0.3922, val_loss: 1.5313, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 7/10 - loss: 1.8233, acc: 0.3420, val_loss: 1.6019, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 8/10 - loss: 1.7493, acc: 0.3595, val_loss: 1.5208, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 9/10 - loss: 1.7832, acc: 0.3573, val_loss: 1.6650, val_acc: 0.4183
+[TCP] Received: training@@@Epoch 10/10 - loss: 1.8062, acc: 0.3747, val_loss: 1.5519, val_acc: 0.4183
+
+[INFO] Calibration done, copy model ft-epoch7.pth to the account\0521_tsai\model\base_model\Calibed_Model_v001.pth
+[DEBUG] val_acc=0.4183, val_loss=1.5208
+[DEBUG] delta_acc=0.4183, deltaValLoss=-inf
+[Backend] 訓練完成！新模型: Calibed_Model_v001
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.25 deltaLoss=-inf, timeCost=1.00, lqp=0.3125 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=441
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.99, gamma=1.492957770064643 deltaLoss=-inf, timeCost=1.00, lqp=0.3732 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=442
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.70, gamma=1.3510343543005934 deltaLoss=-inf, timeCost=1.00, lqp=0.3378 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=443
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.2517736829964803 deltaLoss=-inf, timeCost=1.00, lqp=0.3129 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=444
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.88, gamma=1.4404987706643362 deltaLoss=-inf, timeCost=1.00, lqp=0.3601 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=445
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.2177151694930626 deltaLoss=-inf, timeCost=1.00, lqp=0.3044 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=446
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.93, gamma=1.4652391612868532 deltaLoss=-inf, timeCost=1.00, lqp=0.3663 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=447
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.33, gamma=1.1664630547995223 deltaLoss=-inf, timeCost=1.00, lqp=0.2916 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=448
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.95, gamma=1.4732047109210002 deltaLoss=-inf, timeCost=1.00, lqp=0.3683 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=449
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.91, gamma=1.45463966932433 deltaLoss=-inf, timeCost=1.00, lqp=0.3637 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=450
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.22, gamma=1.1124906387140092 deltaLoss=-inf, timeCost=1.00, lqp=0.2781 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=451
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.70, gamma=1.349366562449355 deltaLoss=-inf, timeCost=1.00, lqp=0.3373 raw_reward=inf, clipped_reward=2.0000
+[Bandit] update: action=INCLUDE, reward=2.0000, buffer_size=452
+[Intermission] calib done, deltaValLoss=-inf
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 50, N_Class: 4
+song name: Unlasting
+[CSV] Start write EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_104059.csv
+[DEBUG] 重新載入模型: account\0521_tsai\model\base_model\Calibed_Model_v001.pth
+[INFO] Start predict loop...

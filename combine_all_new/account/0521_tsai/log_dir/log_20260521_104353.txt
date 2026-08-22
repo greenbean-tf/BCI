@@ -1,0 +1,800 @@
+[INFO] Logged in as: 0521_tsai
+[INFO] Log file: account\0521_tsai\log_dir\log_20260521_104353.txt
+[ExperienceReplayMemory] load_buffer: account\0521_tsai\hq_buffer.pt 不存在，跳過
+[MainController] hq_buffer 路徑: account\0521_tsai\hq_buffer.pt
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 50, N_Class: 4
+song name: Unlasting
+[CSV] Start write EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_104359.csv
+[DEBUG] 重新載入模型: account\0521_tsai\model\base_model\Calibed_Model_v001.pth
+[INFO] Start predict loop...
+song_start_time: 2453.3091019
+song_end_time: 2743.5903041
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_104359.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_103835.csv', 'account\\0521_tsai\\real_time_data\\eeg_record_20260521_104359.csv']
+檔案已成功儲存至: account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt
+[INFO] pt_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_103835.pt', 'account\\0521_tsai\\real_time_data\\eeg_record_20260521_104359.pt']
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (16x4888 and 1560x4))，跳過
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (50x4888 and 1560x4))，跳過
+[model_interface] rerun_inference 完成，共更新 0 筆 trial
+RL_open: False
+name account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt
+name account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt
+valid_ratio: 0.25
+process data finish
+save_dir account\0521_tsai\model\Trained_Model_v002
+[TCP] Received: training@@@Epoch 1/6 - loss: 1.4433, acc: 0.2521, val_loss: 1.4004, val_acc: 0.2376
+[TCP] Received: training@@@Epoch 2/6 - loss: 1.4526, acc: 0.2329, val_loss: 1.3957, val_acc: 0.2480
+[TCP] Received: training@@@Epoch 3/6 - loss: 1.4392, acc: 0.2473, val_loss: 1.3935, val_acc: 0.2468
+[TCP] Received: training@@@Epoch 4/6 - loss: 1.4273, acc: 0.2609, val_loss: 1.3931, val_acc: 0.2537
+[TCP] Received: training@@@Epoch 5/6 - loss: 1.4174, acc: 0.2669, val_loss: 1.3912, val_acc: 0.2618
+[TCP] Received: training@@@Epoch 6/6 - loss: 1.4239, acc: 0.2689, val_loss: 1.3914, val_acc: 0.2664
+
+[INFO] Calibration done, copy model train-epoch4.pth to the account\0521_tsai\model\base_model\Trained_Model_v002.pth
+[DEBUG] val_acc=0.2618, val_loss=1.3912
+[DEBUG] delta_acc=0.2618, deltaValLoss=-inf
+[Backend] 訓練完成！新模型: Trained_Model_v002
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 20, N_Class: 4
+song name: IRIS OUT
+[CSV] Start write EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_105120.csv
+[DEBUG] 重新載入模型: account\0521_tsai\model\base_model\Trained_Model_v002.pth
+[INFO] Start predict loop...
+song_start_time: 2894.1770559
+song_end_time: 3036.8529411
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_105120.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_105120.csv']
+檔案已成功儲存至: account\0521_tsai\real_time_data\eeg_record_20260521_105120.pt
+[INFO] pt_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_105120.pt']
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (16x4888 and 1560x4))，跳過
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (50x4888 and 1560x4))，跳過
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_105120.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (20x4888 and 1560x4))，跳過
+[model_interface] rerun_inference 完成，共更新 0 筆 trial
+RL_open: True
+name account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt
+name account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt
+name account\0521_tsai\real_time_data\eeg_record_20260521_105120.pt
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=1.0/7.0, total=1, shouldUpdate=False
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=2.0/7.0, total=2, shouldUpdate=False
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=3.0/7.0, total=3, shouldUpdate=False
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=4.0/7.0, total=4, shouldUpdate=False
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=5.0/7.0, total=5, shouldUpdate=False
+[DataLoader] collect_rl: Hit#4: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=6.0/7.0, total=6, shouldUpdate=False
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=False
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=7.0/7.0, total=7, shouldUpdate=True
+[DataLoader] collect_rl: Hit#8: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=8.0/7.0, total=8, shouldUpdate=True
+[DataLoader] collect_rl: Hit#9: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=9.0/7.0, total=9, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=10.0/7.0, total=10, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=11.0/7.0, total=11, shouldUpdate=True
+[DataLoader] collect_rl: Hit#14: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=12.0/7.0, total=12, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=13.0/7.0, total=13, shouldUpdate=True
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=14.0/7.0, total=14, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=15.0/7.0, total=15, shouldUpdate=True
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=16.0/7.0, total=16, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=17.0/7.0, total=17, shouldUpdate=True
+[DataLoader] collect_rl: Hit#4: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=18.0/7.0, total=18, shouldUpdate=True
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=19.0/7.0, total=19, shouldUpdate=True
+[DataLoader] collect_rl: Hit#6: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=20.0/7.0, total=20, shouldUpdate=True
+[DataLoader] collect_rl: Hit#7: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=21.0/7.0, total=21, shouldUpdate=True
+[DataLoader] collect_rl: Hit#10: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=22.0/7.0, total=22, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=23.0/7.0, total=23, shouldUpdate=True
+[DataLoader] collect_rl: Hit#14: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=24.0/7.0, total=24, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=25.0/7.0, total=25, shouldUpdate=True
+[DataLoader] collect_rl: Hit#16: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=26.0/7.0, total=26, shouldUpdate=True
+[DataLoader] collect_rl: Hit#17: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=27.0/7.0, total=27, shouldUpdate=True
+[DataLoader] collect_rl: Hit#18: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=28.0/7.0, total=28, shouldUpdate=True
+[DataLoader] collect_rl: Hit#19: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=29.0/7.0, total=29, shouldUpdate=True
+[DataLoader] collect_rl: Hit#20: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=30.0/7.0, total=30, shouldUpdate=True
+[DataLoader] collect_rl: Hit#21: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=31.0/7.0, total=31, shouldUpdate=True
+[DataLoader] collect_rl: Hit#22: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=32.0/7.0, total=32, shouldUpdate=True
+[DataLoader] collect_rl: Hit#24: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=33.0/7.0, total=33, shouldUpdate=True
+[DataLoader] collect_rl: Hit#25: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=34.0/7.0, total=34, shouldUpdate=True
+[DataLoader] collect_rl: Hit#27: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=35.0/7.0, total=35, shouldUpdate=True
+[DataLoader] collect_rl: Hit#29: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=36.0/7.0, total=36, shouldUpdate=True
+[DataLoader] collect_rl: Hit#31: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=37.0/7.0, total=37, shouldUpdate=True
+[DataLoader] collect_rl: Hit#32: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=38.0/7.0, total=38, shouldUpdate=True
+[DataLoader] collect_rl: Hit#33: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=39.0/7.0, total=39, shouldUpdate=True
+[DataLoader] collect_rl: Hit#34: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=40.0/7.0, total=40, shouldUpdate=True
+[DataLoader] collect_rl: Hit#35: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=41.0/7.0, total=41, shouldUpdate=True
+[DataLoader] collect_rl: Hit#38: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=42.0/7.0, total=42, shouldUpdate=True
+[DataLoader] collect_rl: Hit#40: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=43.0/7.0, total=43, shouldUpdate=True
+[DataLoader] collect_rl: Hit#41: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=44.0/7.0, total=44, shouldUpdate=True
+[DataLoader] collect_rl: Hit#43: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=45.0/7.0, total=45, shouldUpdate=True
+[DataLoader] collect_rl: Hit#44: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=46.0/7.0, total=46, shouldUpdate=True
+[DataLoader] collect_rl: Hit#46: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=47.0/7.0, total=47, shouldUpdate=True
+[DataLoader] collect_rl: Hit#47: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=48.0/7.0, total=48, shouldUpdate=True
+[DataLoader] collect_rl: Hit#48: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=49.0/7.0, total=49, shouldUpdate=True
+[DataLoader] collect_rl: Hit#49: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=50.0/7.0, total=50, shouldUpdate=True
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=51.0/7.0, total=51, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=52.0/7.0, total=52, shouldUpdate=True
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=53.0/7.0, total=53, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=54.0/7.0, total=54, shouldUpdate=True
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=55.0/7.0, total=55, shouldUpdate=True
+[DataLoader] collect_rl: Hit#6: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=56.0/7.0, total=56, shouldUpdate=True
+[DataLoader] collect_rl: Hit#8: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=57.0/7.0, total=57, shouldUpdate=True
+[DataLoader] collect_rl: Hit#10: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=58.0/7.0, total=58, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=59.0/7.0, total=59, shouldUpdate=True
+[DataLoader] collect_rl: Hit#13: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=60.0/7.0, total=60, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=61.0/7.0, total=61, shouldUpdate=True
+[DataLoader] collect_rl: Hit#16: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=62.0/7.0, total=62, shouldUpdate=True
+[DataLoader] collect_rl: Hit#17: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=63.0/7.0, total=63, shouldUpdate=True
+[DataLoader] collect_rl: Hit#18: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=64.0/7.0, total=64, shouldUpdate=True
+[DataLoader] collect_rl: Hit#19: action=INCLUDE, shouldUpdate=True
+[DataLoader] collect_rl 完成: 64 筆記錄, shouldUpdate=True
+[DataLoader] prepare_datasets_RL_v2: train=2448, valid=816, replay=0, new_hq=64
+process data finish
+save_dir account\0521_tsai\model\Calibed_Model_v003
+
+[INFO] Loaded checkpoint from account\0521_tsai\model\base_model\Trained_Model_v002.pth
+[TCP] Received: training@@@Epoch 1/10 - loss: 1.4347, acc: 0.2414, val_loss: 1.3828, val_acc: 0.2586
+[TCP] Received: training@@@Epoch 2/10 - loss: 1.4270, acc: 0.2610, val_loss: 1.3835, val_acc: 0.2623
+[TCP] Received: training@@@Epoch 3/10 - loss: 1.4191, acc: 0.2537, val_loss: 1.3842, val_acc: 0.2598
+[TCP] Received: training@@@Epoch 4/10 - loss: 1.4186, acc: 0.2594, val_loss: 1.3842, val_acc: 0.2586
+[TCP] Received: training@@@Epoch 5/10 - loss: 1.4267, acc: 0.2480, val_loss: 1.3845, val_acc: 0.2610
+[TCP] Received: training@@@Epoch 6/10 - loss: 1.4132, acc: 0.2708, val_loss: 1.3849, val_acc: 0.2537
+[TCP] Received: training@@@Epoch 7/10 - loss: 1.4111, acc: 0.2708, val_loss: 1.3846, val_acc: 0.2635
+[TCP] Received: training@@@Epoch 8/10 - loss: 1.4148, acc: 0.2672, val_loss: 1.3850, val_acc: 0.2647
+[TCP] Received: training@@@Epoch 9/10 - loss: 1.4130, acc: 0.2655, val_loss: 1.3851, val_acc: 0.2708
+[TCP] Received: training@@@Epoch 10/10 - loss: 1.4019, acc: 0.2855, val_loss: 1.3851, val_acc: 0.2708
+
+[INFO] Calibration done, copy model ft-epoch0.pth to the account\0521_tsai\model\base_model\Calibed_Model_v003.pth
+[DEBUG] val_acc=0.2586, val_loss=1.3828
+[DEBUG] delta_acc=-0.0032, deltaValLoss=-0.0084
+[Backend] 訓練完成！新模型: Calibed_Model_v003
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.25 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3125 raw_reward=-0.1853, clipped_reward=-0.1853
+[Bandit] update: action=INCLUDE, reward=-0.1853, buffer_size=441
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.99, gamma=1.492957770064643 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3732 raw_reward=-0.2036, clipped_reward=-0.2036
+[Bandit] update: action=INCLUDE, reward=-0.2036, buffer_size=442
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.70, gamma=1.3510343543005934 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3378 raw_reward=-0.1929, clipped_reward=-0.1929
+[Bandit] update: action=INCLUDE, reward=-0.1929, buffer_size=443
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.2517736829964803 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3129 raw_reward=-0.1855, clipped_reward=-0.1855
+[Bandit] update: action=INCLUDE, reward=-0.1855, buffer_size=444
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.88, gamma=1.4404987706643362 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3601 raw_reward=-0.1996, clipped_reward=-0.1996
+[Bandit] update: action=INCLUDE, reward=-0.1996, buffer_size=445
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.2177151694930626 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3044 raw_reward=-0.1829, clipped_reward=-0.1829
+[Bandit] update: action=INCLUDE, reward=-0.1829, buffer_size=446
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.93, gamma=1.4652391612868532 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3663 raw_reward=-0.2015, clipped_reward=-0.2015
+[Bandit] update: action=INCLUDE, reward=-0.2015, buffer_size=447
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.33, gamma=1.1664630547995223 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2916 raw_reward=-0.1791, clipped_reward=-0.1791
+[Bandit] update: action=INCLUDE, reward=-0.1791, buffer_size=448
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.95, gamma=1.4732047109210002 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3683 raw_reward=-0.2021, clipped_reward=-0.2021
+[Bandit] update: action=INCLUDE, reward=-0.2021, buffer_size=449
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.91, gamma=1.45463966932433 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3637 raw_reward=-0.2007, clipped_reward=-0.2007
+[Bandit] update: action=INCLUDE, reward=-0.2007, buffer_size=450
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.22, gamma=1.1124906387140092 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2781 raw_reward=-0.1750, clipped_reward=-0.1750
+[Bandit] update: action=INCLUDE, reward=-0.1750, buffer_size=451
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.70, gamma=1.349366562449355 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3373 raw_reward=-0.1928, clipped_reward=-0.1928
+[Bandit] update: action=INCLUDE, reward=-0.1928, buffer_size=452
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.33, gamma=1.1649230566859718 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2912 raw_reward=-0.1790, clipped_reward=-0.1790
+[Bandit] update: action=INCLUDE, reward=-0.1790, buffer_size=453
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.70, gamma=1.3494180460594711 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3374 raw_reward=-0.1928, clipped_reward=-0.1928
+[Bandit] update: action=INCLUDE, reward=-0.1928, buffer_size=454
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.95, gamma=1.4731542513182325 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3683 raw_reward=-0.2021, clipped_reward=-0.2021
+[Bandit] update: action=INCLUDE, reward=-0.2021, buffer_size=455
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.55, gamma=1.2751569797916906 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3188 raw_reward=-0.1872, clipped_reward=-0.1872
+[Bandit] update: action=INCLUDE, reward=-0.1872, buffer_size=456
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.42, gamma=1.2111703588239897 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3028 raw_reward=-0.1824, clipped_reward=-0.1824
+[Bandit] update: action=INCLUDE, reward=-0.1824, buffer_size=457
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.88, gamma=1.441381559688503 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3603 raw_reward=-0.1997, clipped_reward=-0.1997
+[Bandit] update: action=INCLUDE, reward=-0.1997, buffer_size=458
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.68, gamma=1.3401797882053277 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3350 raw_reward=-0.1921, clipped_reward=-0.1921
+[Bandit] update: action=INCLUDE, reward=-0.1921, buffer_size=459
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1911811400474175 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2978 raw_reward=-0.1809, clipped_reward=-0.1809
+[Bandit] update: action=INCLUDE, reward=-0.1809, buffer_size=460
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.81, gamma=1.404831643685956 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3512 raw_reward=-0.1970, clipped_reward=-0.1970
+[Bandit] update: action=INCLUDE, reward=-0.1970, buffer_size=461
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.1961226029750462 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2990 raw_reward=-0.1813, clipped_reward=-0.1813
+[Bandit] update: action=INCLUDE, reward=-0.1813, buffer_size=462
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1912210090665287 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2978 raw_reward=-0.1809, clipped_reward=-0.1809
+[Bandit] update: action=INCLUDE, reward=-0.1809, buffer_size=463
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.37, gamma=1.1852595203301557 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2963 raw_reward=-0.1805, clipped_reward=-0.1805
+[Bandit] update: action=INCLUDE, reward=-0.1805, buffer_size=464
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.78, gamma=1.3890132741615746 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3473 raw_reward=-0.1958, clipped_reward=-0.1958
+[Bandit] update: action=INCLUDE, reward=-0.1958, buffer_size=465
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.97, gamma=1.484458872702759 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3711 raw_reward=-0.2029, clipped_reward=-0.2029
+[Bandit] update: action=INCLUDE, reward=-0.2029, buffer_size=466
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.52, gamma=1.261875265987899 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3155 raw_reward=-0.1862, clipped_reward=-0.1862
+[Bandit] update: action=INCLUDE, reward=-0.1862, buffer_size=467
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.95, gamma=1.4737804324761854 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3684 raw_reward=-0.2021, clipped_reward=-0.2021
+[Bandit] update: action=INCLUDE, reward=-0.2021, buffer_size=468
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.52, gamma=1.2594518913678419 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3149 raw_reward=-0.1861, clipped_reward=-0.1861
+[Bandit] update: action=INCLUDE, reward=-0.1861, buffer_size=469
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.97, gamma=1.4867630497631208 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3717 raw_reward=-0.2031, clipped_reward=-0.2031
+[Bandit] update: action=INCLUDE, reward=-0.2031, buffer_size=470
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.65, gamma=1.326552761541791 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3316 raw_reward=-0.1911, clipped_reward=-0.1911
+[Bandit] update: action=INCLUDE, reward=-0.1911, buffer_size=471
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.54, gamma=1.2681299182278873 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3170 raw_reward=-0.1867, clipped_reward=-0.1867
+[Bandit] update: action=INCLUDE, reward=-0.1867, buffer_size=472
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.54, gamma=1.2690565914866987 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3173 raw_reward=-0.1868, clipped_reward=-0.1868
+[Bandit] update: action=INCLUDE, reward=-0.1868, buffer_size=473
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.56, gamma=1.2799699990424536 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3200 raw_reward=-0.1876, clipped_reward=-0.1876
+[Bandit] update: action=INCLUDE, reward=-0.1876, buffer_size=474
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.2189788107518162 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3047 raw_reward=-0.1830, clipped_reward=-0.1830
+[Bandit] update: action=INCLUDE, reward=-0.1830, buffer_size=475
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.40, gamma=1.2008984864495702 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3002 raw_reward=-0.1817, clipped_reward=-0.1817
+[Bandit] update: action=INCLUDE, reward=-0.1817, buffer_size=476
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.52, gamma=1.2619486964126105 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3155 raw_reward=-0.1862, clipped_reward=-0.1862
+[Bandit] update: action=INCLUDE, reward=-0.1862, buffer_size=477
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.52, gamma=1.2583343747382179 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3146 raw_reward=-0.1860, clipped_reward=-0.1860
+[Bandit] update: action=INCLUDE, reward=-0.1860, buffer_size=478
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.60, gamma=1.3021860535973089 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3255 raw_reward=-0.1893, clipped_reward=-0.1893
+[Bandit] update: action=INCLUDE, reward=-0.1893, buffer_size=479
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.57, gamma=1.2866490222638796 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3217 raw_reward=-0.1881, clipped_reward=-0.1881
+[Bandit] update: action=INCLUDE, reward=-0.1881, buffer_size=480
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.29, gamma=1.146080302699246 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2865 raw_reward=-0.1776, clipped_reward=-0.1776
+[Bandit] update: action=INCLUDE, reward=-0.1776, buffer_size=481
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.65, gamma=1.324720228628932 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3312 raw_reward=-0.1910, clipped_reward=-0.1910
+[Bandit] update: action=INCLUDE, reward=-0.1910, buffer_size=482
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.91, gamma=1.456066264405127 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3640 raw_reward=-0.2008, clipped_reward=-0.2008
+[Bandit] update: action=INCLUDE, reward=-0.2008, buffer_size=483
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.1925576828420452 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2981 raw_reward=-0.1810, clipped_reward=-0.1810
+[Bandit] update: action=INCLUDE, reward=-0.1810, buffer_size=484
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.1954135364995555 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2989 raw_reward=-0.1813, clipped_reward=-0.1813
+[Bandit] update: action=INCLUDE, reward=-0.1813, buffer_size=485
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.43, gamma=1.2130970267552326 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3033 raw_reward=-0.1826, clipped_reward=-0.1826
+[Bandit] update: action=INCLUDE, reward=-0.1826, buffer_size=486
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.45, gamma=1.2251414474099713 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3063 raw_reward=-0.1835, clipped_reward=-0.1835
+[Bandit] update: action=INCLUDE, reward=-0.1835, buffer_size=487
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.88, gamma=1.4384196466290544 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3596 raw_reward=-0.1995, clipped_reward=-0.1995
+[Bandit] update: action=INCLUDE, reward=-0.1995, buffer_size=488
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.46, gamma=1.228229627431004 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3071 raw_reward=-0.1837, clipped_reward=-0.1837
+[Bandit] update: action=INCLUDE, reward=-0.1837, buffer_size=489
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.181397322094241 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2953 raw_reward=-0.1802, clipped_reward=-0.1802
+[Bandit] update: action=INCLUDE, reward=-0.1802, buffer_size=490
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.51, gamma=1.2574698828263084 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3144 raw_reward=-0.1859, clipped_reward=-0.1859
+[Bandit] update: action=INCLUDE, reward=-0.1859, buffer_size=491
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.53, gamma=1.2644046702372753 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3161 raw_reward=-0.1864, clipped_reward=-0.1864
+[Bandit] update: action=INCLUDE, reward=-0.1864, buffer_size=492
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1891026803798288 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2973 raw_reward=-0.1808, clipped_reward=-0.1808
+[Bandit] update: action=INCLUDE, reward=-0.1808, buffer_size=493
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.49, gamma=1.243838580718967 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3110 raw_reward=-0.1849, clipped_reward=-0.1849
+[Bandit] update: action=INCLUDE, reward=-0.1849, buffer_size=494
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.40, gamma=1.1987859788308262 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2997 raw_reward=-0.1815, clipped_reward=-0.1815
+[Bandit] update: action=INCLUDE, reward=-0.1815, buffer_size=495
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.40, gamma=1.2005722156626129 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3001 raw_reward=-0.1816, clipped_reward=-0.1816
+[Bandit] update: action=INCLUDE, reward=-0.1816, buffer_size=496
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.40, gamma=1.1993638385469634 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2998 raw_reward=-0.1816, clipped_reward=-0.1816
+[Bandit] update: action=INCLUDE, reward=-0.1816, buffer_size=497
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.191842639850308 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2980 raw_reward=-0.1810, clipped_reward=-0.1810
+[Bandit] update: action=INCLUDE, reward=-0.1810, buffer_size=498
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.193005839183356 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2983 raw_reward=-0.1811, clipped_reward=-0.1811
+[Bandit] update: action=INCLUDE, reward=-0.1811, buffer_size=499
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.1805045173565065 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2951 raw_reward=-0.1801, clipped_reward=-0.1801
+[Bandit] update: action=INCLUDE, reward=-0.1801, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.195974499419268 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2990 raw_reward=-0.1813, clipped_reward=-0.1813
+[Bandit] update: action=INCLUDE, reward=-0.1813, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.45, gamma=1.224516813354788 deltaLoss=-0.0084, timeCost=1.00, lqp=0.3061 raw_reward=-0.1834, clipped_reward=-0.1834
+[Bandit] update: action=INCLUDE, reward=-0.1834, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.1813943345278513 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2953 raw_reward=-0.1802, clipped_reward=-0.1802
+[Bandit] update: action=INCLUDE, reward=-0.1802, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.31, gamma=1.1573369577730792 deltaLoss=-0.0084, timeCost=1.00, lqp=0.2893 raw_reward=-0.1784, clipped_reward=-0.1784
+[Bandit] update: action=INCLUDE, reward=-0.1784, buffer_size=500
+[Intermission] calib done, deltaValLoss=-0.0084
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 52, N_Class: 4
+song name: NEON BLADE
+[CSV] Start write EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_105520.csv
+[DEBUG] 重新載入模型: account\0521_tsai\model\base_model\Calibed_Model_v003.pth
+[INFO] Start predict loop...
+song_start_time: 3134.1691449
+song_end_time: 3398.9549649
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0521_tsai\real_time_data\eeg_record_20260521_105520.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_105520.csv']
+檔案已成功儲存至: account\0521_tsai\real_time_data\eeg_record_20260521_105520.pt
+[INFO] pt_file_paths: ['account\\0521_tsai\\real_time_data\\eeg_record_20260521_105520.pt']
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (16x4888 and 1560x4))，跳過
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (50x4888 and 1560x4))，跳過
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_105120.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (20x4888 and 1560x4))，跳過
+[model_interface] rerun_inference: account\0521_tsai\real_time_data\eeg_record_20260521_105520.pt 失敗 (mat1 and mat2 shapes cannot be multiplied (52x4888 and 1560x4))，跳過
+[model_interface] rerun_inference 完成，共更新 0 筆 trial
+RL_open: True
+name account\0521_tsai\real_time_data\eeg_record_20260521_103835.pt
+name account\0521_tsai\real_time_data\eeg_record_20260521_104359.pt
+name account\0521_tsai\real_time_data\eeg_record_20260521_105120.pt
+name account\0521_tsai\real_time_data\eeg_record_20260521_105520.pt
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=65.0/7.0, total=65, shouldUpdate=True
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=66.0/7.0, total=66, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=67.0/7.0, total=67, shouldUpdate=True
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=68.0/7.0, total=68, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=69.0/7.0, total=69, shouldUpdate=True
+[DataLoader] collect_rl: Hit#4: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=70.0/7.0, total=70, shouldUpdate=True
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=71.0/7.0, total=71, shouldUpdate=True
+[DataLoader] collect_rl: Hit#8: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=72.0/7.0, total=72, shouldUpdate=True
+[DataLoader] collect_rl: Hit#9: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=73.0/7.0, total=73, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=74.0/7.0, total=74, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=75.0/7.0, total=75, shouldUpdate=True
+[DataLoader] collect_rl: Hit#14: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=76.0/7.0, total=76, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=77.0/7.0, total=77, shouldUpdate=True
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=78.0/7.0, total=78, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=79.0/7.0, total=79, shouldUpdate=True
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=80.0/7.0, total=80, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=81.0/7.0, total=81, shouldUpdate=True
+[DataLoader] collect_rl: Hit#4: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=82.0/7.0, total=82, shouldUpdate=True
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=83.0/7.0, total=83, shouldUpdate=True
+[DataLoader] collect_rl: Hit#6: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=84.0/7.0, total=84, shouldUpdate=True
+[DataLoader] collect_rl: Hit#7: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=85.0/7.0, total=85, shouldUpdate=True
+[DataLoader] collect_rl: Hit#10: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=86.0/7.0, total=86, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=87.0/7.0, total=87, shouldUpdate=True
+[DataLoader] collect_rl: Hit#14: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=88.0/7.0, total=88, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=89.0/7.0, total=89, shouldUpdate=True
+[DataLoader] collect_rl: Hit#16: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=90.0/7.0, total=90, shouldUpdate=True
+[DataLoader] collect_rl: Hit#17: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=91.0/7.0, total=91, shouldUpdate=True
+[DataLoader] collect_rl: Hit#18: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=92.0/7.0, total=92, shouldUpdate=True
+[DataLoader] collect_rl: Hit#19: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=93.0/7.0, total=93, shouldUpdate=True
+[DataLoader] collect_rl: Hit#20: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=94.0/7.0, total=94, shouldUpdate=True
+[DataLoader] collect_rl: Hit#21: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=95.0/7.0, total=95, shouldUpdate=True
+[DataLoader] collect_rl: Hit#22: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=96.0/7.0, total=96, shouldUpdate=True
+[DataLoader] collect_rl: Hit#24: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=97.0/7.0, total=97, shouldUpdate=True
+[DataLoader] collect_rl: Hit#25: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=98.0/7.0, total=98, shouldUpdate=True
+[DataLoader] collect_rl: Hit#27: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=99.0/7.0, total=99, shouldUpdate=True
+[DataLoader] collect_rl: Hit#29: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=100.0/7.0, total=100, shouldUpdate=True
+[DataLoader] collect_rl: Hit#31: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=101.0/7.0, total=101, shouldUpdate=True
+[DataLoader] collect_rl: Hit#32: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=102.0/7.0, total=102, shouldUpdate=True
+[DataLoader] collect_rl: Hit#33: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=103.0/7.0, total=103, shouldUpdate=True
+[DataLoader] collect_rl: Hit#34: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=104.0/7.0, total=104, shouldUpdate=True
+[DataLoader] collect_rl: Hit#35: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=105.0/7.0, total=105, shouldUpdate=True
+[DataLoader] collect_rl: Hit#38: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=106.0/7.0, total=106, shouldUpdate=True
+[DataLoader] collect_rl: Hit#40: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=107.0/7.0, total=107, shouldUpdate=True
+[DataLoader] collect_rl: Hit#41: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=108.0/7.0, total=108, shouldUpdate=True
+[DataLoader] collect_rl: Hit#43: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=109.0/7.0, total=109, shouldUpdate=True
+[DataLoader] collect_rl: Hit#44: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=110.0/7.0, total=110, shouldUpdate=True
+[DataLoader] collect_rl: Hit#46: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=111.0/7.0, total=111, shouldUpdate=True
+[DataLoader] collect_rl: Hit#47: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=112.0/7.0, total=112, shouldUpdate=True
+[DataLoader] collect_rl: Hit#48: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=113.0/7.0, total=113, shouldUpdate=True
+[DataLoader] collect_rl: Hit#49: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=114.0/7.0, total=114, shouldUpdate=True
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=115.0/7.0, total=115, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=116.0/7.0, total=116, shouldUpdate=True
+[DataLoader] collect_rl: Hit#2: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=117.0/7.0, total=117, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=118.0/7.0, total=118, shouldUpdate=True
+[DataLoader] collect_rl: Hit#5: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=119.0/7.0, total=119, shouldUpdate=True
+[DataLoader] collect_rl: Hit#6: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=120.0/7.0, total=120, shouldUpdate=True
+[DataLoader] collect_rl: Hit#8: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=121.0/7.0, total=121, shouldUpdate=True
+[DataLoader] collect_rl: Hit#10: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=122.0/7.0, total=122, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=123.0/7.0, total=123, shouldUpdate=True
+[DataLoader] collect_rl: Hit#13: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=124.0/7.0, total=124, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=125.0/7.0, total=125, shouldUpdate=True
+[DataLoader] collect_rl: Hit#16: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=126.0/7.0, total=126, shouldUpdate=True
+[DataLoader] collect_rl: Hit#17: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=127.0/7.0, total=127, shouldUpdate=True
+[DataLoader] collect_rl: Hit#18: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=128.0/7.0, total=128, shouldUpdate=True
+[DataLoader] collect_rl: Hit#19: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=129.0/7.0, total=129, shouldUpdate=True
+[DataLoader] collect_rl: Hit#0: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=130.0/7.0, total=130, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=131.0/7.0, total=131, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=132.0/7.0, total=132, shouldUpdate=True
+[DataLoader] collect_rl: Hit#4: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=133.0/7.0, total=133, shouldUpdate=True
+[DataLoader] collect_rl: Hit#6: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=134.0/7.0, total=134, shouldUpdate=True
+[DataLoader] collect_rl: Hit#7: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=135.0/7.0, total=135, shouldUpdate=True
+[DataLoader] collect_rl: Hit#9: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=136.0/7.0, total=136, shouldUpdate=True
+[DataLoader] collect_rl: Hit#10: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=137.0/7.0, total=137, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=138.0/7.0, total=138, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=139.0/7.0, total=139, shouldUpdate=True
+[DataLoader] collect_rl: Hit#13: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=140.0/7.0, total=140, shouldUpdate=True
+[DataLoader] collect_rl: Hit#14: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=141.0/7.0, total=141, shouldUpdate=True
+[DataLoader] collect_rl: Hit#15: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=142.0/7.0, total=142, shouldUpdate=True
+[DataLoader] collect_rl: Hit#16: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=143.0/7.0, total=143, shouldUpdate=True
+[DataLoader] collect_rl: Hit#17: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=144.0/7.0, total=144, shouldUpdate=True
+[DataLoader] collect_rl: Hit#19: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=145.0/7.0, total=145, shouldUpdate=True
+[DataLoader] collect_rl: Hit#20: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=146.0/7.0, total=146, shouldUpdate=True
+[DataLoader] collect_rl: Hit#21: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=147.0/7.0, total=147, shouldUpdate=True
+[DataLoader] collect_rl: Hit#22: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=148.0/7.0, total=148, shouldUpdate=True
+[DataLoader] collect_rl: Hit#23: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=149.0/7.0, total=149, shouldUpdate=True
+[DataLoader] collect_rl: Hit#25: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=150.0/7.0, total=150, shouldUpdate=True
+[DataLoader] collect_rl: Hit#26: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=151.0/7.0, total=151, shouldUpdate=True
+[DataLoader] collect_rl: Hit#30: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=152.0/7.0, total=152, shouldUpdate=True
+[DataLoader] collect_rl: Hit#31: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=153.0/7.0, total=153, shouldUpdate=True
+[DataLoader] collect_rl: Hit#32: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=154.0/7.0, total=154, shouldUpdate=True
+[DataLoader] collect_rl: Hit#33: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=155.0/7.0, total=155, shouldUpdate=True
+[DataLoader] collect_rl: Hit#35: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=156.0/7.0, total=156, shouldUpdate=True
+[DataLoader] collect_rl: Hit#36: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=157.0/7.0, total=157, shouldUpdate=True
+[DataLoader] collect_rl: Hit#37: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=158.0/7.0, total=158, shouldUpdate=True
+[DataLoader] collect_rl: Hit#39: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=159.0/7.0, total=159, shouldUpdate=True
+[DataLoader] collect_rl: Hit#41: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=160.0/7.0, total=160, shouldUpdate=True
+[DataLoader] collect_rl: Hit#43: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=161.0/7.0, total=161, shouldUpdate=True
+[DataLoader] collect_rl: Hit#45: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=162.0/7.0, total=162, shouldUpdate=True
+[DataLoader] collect_rl: Hit#46: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=163.0/7.0, total=163, shouldUpdate=True
+[DataLoader] collect_rl: Hit#47: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=164.0/7.0, total=164, shouldUpdate=True
+[DataLoader] collect_rl: Hit#48: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=165.0/7.0, total=165, shouldUpdate=True
+[DataLoader] collect_rl: Hit#49: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=166.0/7.0, total=166, shouldUpdate=True
+[DataLoader] collect_rl: Hit#50: action=INCLUDE, shouldUpdate=True
+[UpdateScheduler] record: action=INCLUDE, score=1.0, accumulated=167.0/7.0, total=167, shouldUpdate=True
+[DataLoader] collect_rl: Hit#51: action=INCLUDE, shouldUpdate=True
+[DataLoader] collect_rl 完成: 103 筆記錄, shouldUpdate=True
+[DataLoader] prepare_datasets_RL_v2: train=3940, valid=1313, replay=0, new_hq=103
+process data finish
+save_dir account\0521_tsai\model\Calibed_Model_v004
+
+[INFO] Loaded checkpoint from account\0521_tsai\model\base_model\Calibed_Model_v003.pth
+[TCP] Received: training@@@Epoch 1/10 - loss: 1.4181, acc: 0.2563, val_loss: 1.3911, val_acc: 0.2513
+[TCP] Received: training@@@Epoch 2/10 - loss: 1.4135, acc: 0.2640, val_loss: 1.3881, val_acc: 0.2475
+[TCP] Received: training@@@Epoch 3/10 - loss: 1.4056, acc: 0.2665, val_loss: 1.3890, val_acc: 0.2567
+[TCP] Received: training@@@Epoch 4/10 - loss: 1.4160, acc: 0.2584, val_loss: 1.3893, val_acc: 0.2597
+[TCP] Received: training@@@Epoch 5/10 - loss: 1.4069, acc: 0.2675, val_loss: 1.3878, val_acc: 0.2567
+[TCP] Received: training@@@Epoch 6/10 - loss: 1.4120, acc: 0.2693, val_loss: 1.3868, val_acc: 0.2612
+[TCP] Received: training@@@Epoch 7/10 - loss: 1.4030, acc: 0.2812, val_loss: 1.3855, val_acc: 0.2574
+[TCP] Received: training@@@Epoch 8/10 - loss: 1.4013, acc: 0.2782, val_loss: 1.3870, val_acc: 0.2582
+[TCP] Received: training@@@Epoch 9/10 - loss: 1.4087, acc: 0.2728, val_loss: 1.3871, val_acc: 0.2551
+[TCP] Received: training@@@Epoch 10/10 - loss: 1.3908, acc: 0.2947, val_loss: 1.3872, val_acc: 0.2536
+
+[INFO] Calibration done, copy model ft-epoch6.pth to the account\0521_tsai\model\base_model\Calibed_Model_v004.pth
+[DEBUG] val_acc=0.2574, val_loss=1.3855
+[DEBUG] delta_acc=-0.0012, deltaValLoss=0.0027
+[Backend] 訓練完成！新模型: Calibed_Model_v004
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.32, gamma=1.162079716294928 deltaLoss=0.0027, timeCost=1.00, lqp=0.2905 raw_reward=-0.1898, clipped_reward=-0.1898
+[Bandit] update: action=INCLUDE, reward=-0.1898, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.48, gamma=1.2419019024771638 deltaLoss=0.0027, timeCost=1.00, lqp=0.3105 raw_reward=-0.1958, clipped_reward=-0.1958
+[Bandit] update: action=INCLUDE, reward=-0.1958, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.1819060064752838 deltaLoss=0.0027, timeCost=1.00, lqp=0.2955 raw_reward=-0.1913, clipped_reward=-0.1913
+[Bandit] update: action=INCLUDE, reward=-0.1913, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.34, gamma=1.1699359858331029 deltaLoss=0.0027, timeCost=1.00, lqp=0.2925 raw_reward=-0.1904, clipped_reward=-0.1904
+[Bandit] update: action=INCLUDE, reward=-0.1904, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.43, gamma=1.2127029948338004 deltaLoss=0.0027, timeCost=1.00, lqp=0.3032 raw_reward=-0.1936, clipped_reward=-0.1936
+[Bandit] update: action=INCLUDE, reward=-0.1936, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.34, gamma=1.1694904407754738 deltaLoss=0.0027, timeCost=1.00, lqp=0.2924 raw_reward=-0.1904, clipped_reward=-0.1904
+[Bandit] update: action=INCLUDE, reward=-0.1904, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.49, gamma=1.2442653267328265 deltaLoss=0.0027, timeCost=1.00, lqp=0.3111 raw_reward=-0.1960, clipped_reward=-0.1960
+[Bandit] update: action=INCLUDE, reward=-0.1960, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.32, gamma=1.16222019769404 deltaLoss=0.0027, timeCost=1.00, lqp=0.2906 raw_reward=-0.1899, clipped_reward=-0.1899
+[Bandit] update: action=INCLUDE, reward=-0.1899, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.57, gamma=1.2839214787031705 deltaLoss=0.0027, timeCost=1.00, lqp=0.3210 raw_reward=-0.1990, clipped_reward=-0.1990
+[Bandit] update: action=INCLUDE, reward=-0.1990, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.56, gamma=1.2810452694463108 deltaLoss=0.0027, timeCost=1.00, lqp=0.3203 raw_reward=-0.1988, clipped_reward=-0.1988
+[Bandit] update: action=INCLUDE, reward=-0.1988, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.28, gamma=1.1382416961454909 deltaLoss=0.0027, timeCost=1.00, lqp=0.2846 raw_reward=-0.1881, clipped_reward=-0.1881
+[Bandit] update: action=INCLUDE, reward=-0.1881, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.45, gamma=1.2242681305231435 deltaLoss=0.0027, timeCost=1.00, lqp=0.3061 raw_reward=-0.1945, clipped_reward=-0.1945
+[Bandit] update: action=INCLUDE, reward=-0.1945, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.32, gamma=1.1609657215448823 deltaLoss=0.0027, timeCost=1.00, lqp=0.2902 raw_reward=-0.1898, clipped_reward=-0.1898
+[Bandit] update: action=INCLUDE, reward=-0.1898, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.46, gamma=1.2291007053997791 deltaLoss=0.0027, timeCost=1.00, lqp=0.3073 raw_reward=-0.1949, clipped_reward=-0.1949
+[Bandit] update: action=INCLUDE, reward=-0.1949, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.72, gamma=1.3595881252631667 deltaLoss=0.0027, timeCost=1.00, lqp=0.3399 raw_reward=-0.2047, clipped_reward=-0.2047
+[Bandit] update: action=INCLUDE, reward=-0.2047, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.42, gamma=1.207616525222649 deltaLoss=0.0027, timeCost=1.00, lqp=0.3019 raw_reward=-0.1933, clipped_reward=-0.1933
+[Bandit] update: action=INCLUDE, reward=-0.1933, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.179936465228589 deltaLoss=0.0027, timeCost=1.00, lqp=0.2950 raw_reward=-0.1912, clipped_reward=-0.1912
+[Bandit] update: action=INCLUDE, reward=-0.1912, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.66, gamma=1.3320270790433042 deltaLoss=0.0027, timeCost=1.00, lqp=0.3330 raw_reward=-0.2026, clipped_reward=-0.2026
+[Bandit] update: action=INCLUDE, reward=-0.2026, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.2519969590903568 deltaLoss=0.0027, timeCost=1.00, lqp=0.3130 raw_reward=-0.1966, clipped_reward=-0.1966
+[Bandit] update: action=INCLUDE, reward=-0.1966, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.34, gamma=1.1719632870498207 deltaLoss=0.0027, timeCost=1.00, lqp=0.2930 raw_reward=-0.1906, clipped_reward=-0.1906
+[Bandit] update: action=INCLUDE, reward=-0.1906, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.61, gamma=1.3069451980733084 deltaLoss=0.0027, timeCost=1.00, lqp=0.3267 raw_reward=-0.2007, clipped_reward=-0.2007
+[Bandit] update: action=INCLUDE, reward=-0.2007, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.1759861186557425 deltaLoss=0.0027, timeCost=1.00, lqp=0.2940 raw_reward=-0.1909, clipped_reward=-0.1909
+[Bandit] update: action=INCLUDE, reward=-0.1909, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.1748820684424937 deltaLoss=0.0027, timeCost=1.00, lqp=0.2937 raw_reward=-0.1908, clipped_reward=-0.1908
+[Bandit] update: action=INCLUDE, reward=-0.1908, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.1731306417282417 deltaLoss=0.0027, timeCost=1.00, lqp=0.2933 raw_reward=-0.1907, clipped_reward=-0.1907
+[Bandit] update: action=INCLUDE, reward=-0.1907, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.60, gamma=1.301849681126016 deltaLoss=0.0027, timeCost=1.00, lqp=0.3255 raw_reward=-0.2003, clipped_reward=-0.2003
+[Bandit] update: action=INCLUDE, reward=-0.2003, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.93, gamma=1.4633384562150824 deltaLoss=0.0027, timeCost=1.00, lqp=0.3658 raw_reward=-0.2124, clipped_reward=-0.2124
+[Bandit] update: action=INCLUDE, reward=-0.2124, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.46, gamma=1.2288960785710998 deltaLoss=0.0027, timeCost=1.00, lqp=0.3072 raw_reward=-0.1949, clipped_reward=-0.1949
+[Bandit] update: action=INCLUDE, reward=-0.1949, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.92, gamma=1.4595899235918517 deltaLoss=0.0027, timeCost=1.00, lqp=0.3649 raw_reward=-0.2122, clipped_reward=-0.2122
+[Bandit] update: action=INCLUDE, reward=-0.2122, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.47, gamma=1.2346284191611159 deltaLoss=0.0027, timeCost=1.00, lqp=0.3087 raw_reward=-0.1953, clipped_reward=-0.1953
+[Bandit] update: action=INCLUDE, reward=-0.1953, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.97, gamma=1.4848613554188508 deltaLoss=0.0027, timeCost=1.00, lqp=0.3712 raw_reward=-0.2141, clipped_reward=-0.2141
+[Bandit] update: action=INCLUDE, reward=-0.2141, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.63, gamma=1.3141716793230855 deltaLoss=0.0027, timeCost=1.00, lqp=0.3285 raw_reward=-0.2012, clipped_reward=-0.2012
+[Bandit] update: action=INCLUDE, reward=-0.2012, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.51, gamma=1.2553473959755852 deltaLoss=0.0027, timeCost=1.00, lqp=0.3138 raw_reward=-0.1968, clipped_reward=-0.1968
+[Bandit] update: action=INCLUDE, reward=-0.1968, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.51, gamma=1.2566087262009948 deltaLoss=0.0027, timeCost=1.00, lqp=0.3142 raw_reward=-0.1969, clipped_reward=-0.1969
+[Bandit] update: action=INCLUDE, reward=-0.1969, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.54, gamma=1.2679117535382738 deltaLoss=0.0027, timeCost=1.00, lqp=0.3170 raw_reward=-0.1978, clipped_reward=-0.1978
+[Bandit] update: action=INCLUDE, reward=-0.1978, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.42, gamma=1.2076173962957197 deltaLoss=0.0027, timeCost=1.00, lqp=0.3019 raw_reward=-0.1933, clipped_reward=-0.1933
+[Bandit] update: action=INCLUDE, reward=-0.1933, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1903691151468723 deltaLoss=0.0027, timeCost=1.00, lqp=0.2976 raw_reward=-0.1920, clipped_reward=-0.1920
+[Bandit] update: action=INCLUDE, reward=-0.1920, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.2507986358060283 deltaLoss=0.0027, timeCost=1.00, lqp=0.3127 raw_reward=-0.1965, clipped_reward=-0.1965
+[Bandit] update: action=INCLUDE, reward=-0.1965, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.49, gamma=1.2474824493092063 deltaLoss=0.0027, timeCost=1.00, lqp=0.3119 raw_reward=-0.1962, clipped_reward=-0.1962
+[Bandit] update: action=INCLUDE, reward=-0.1962, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.58, gamma=1.2918447267060689 deltaLoss=0.0027, timeCost=1.00, lqp=0.3230 raw_reward=-0.1996, clipped_reward=-0.1996
+[Bandit] update: action=INCLUDE, reward=-0.1996, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.55, gamma=1.27648261093333 deltaLoss=0.0027, timeCost=1.00, lqp=0.3191 raw_reward=-0.1984, clipped_reward=-0.1984
+[Bandit] update: action=INCLUDE, reward=-0.1984, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.28, gamma=1.1387942916643854 deltaLoss=0.0027, timeCost=1.00, lqp=0.2847 raw_reward=-0.1881, clipped_reward=-0.1881
+[Bandit] update: action=INCLUDE, reward=-0.1881, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.63, gamma=1.3157698859885572 deltaLoss=0.0027, timeCost=1.00, lqp=0.3289 raw_reward=-0.2014, clipped_reward=-0.2014
+[Bandit] update: action=INCLUDE, reward=-0.2014, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.91, gamma=1.4540062400870115 deltaLoss=0.0027, timeCost=1.00, lqp=0.3635 raw_reward=-0.2117, clipped_reward=-0.2117
+[Bandit] update: action=INCLUDE, reward=-0.2117, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.37, gamma=1.1853818326601582 deltaLoss=0.0027, timeCost=1.00, lqp=0.2963 raw_reward=-0.1916, clipped_reward=-0.1916
+[Bandit] update: action=INCLUDE, reward=-0.1916, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.188511043939456 deltaLoss=0.0027, timeCost=1.00, lqp=0.2971 raw_reward=-0.1918, clipped_reward=-0.1918
+[Bandit] update: action=INCLUDE, reward=-0.1918, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.41, gamma=1.2062571792036125 deltaLoss=0.0027, timeCost=1.00, lqp=0.3016 raw_reward=-0.1932, clipped_reward=-0.1932
+[Bandit] update: action=INCLUDE, reward=-0.1932, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.218418757820646 deltaLoss=0.0027, timeCost=1.00, lqp=0.3046 raw_reward=-0.1941, clipped_reward=-0.1941
+[Bandit] update: action=INCLUDE, reward=-0.1941, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.87, gamma=1.4363608540705488 deltaLoss=0.0027, timeCost=1.00, lqp=0.3591 raw_reward=-0.2104, clipped_reward=-0.2104
+[Bandit] update: action=INCLUDE, reward=-0.2104, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.2224271588081492 deltaLoss=0.0027, timeCost=1.00, lqp=0.3056 raw_reward=-0.1944, clipped_reward=-0.1944
+[Bandit] update: action=INCLUDE, reward=-0.1944, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.1761013090179806 deltaLoss=0.0027, timeCost=1.00, lqp=0.2940 raw_reward=-0.1909, clipped_reward=-0.1909
+[Bandit] update: action=INCLUDE, reward=-0.1909, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.2520768901334358 deltaLoss=0.0027, timeCost=1.00, lqp=0.3130 raw_reward=-0.1966, clipped_reward=-0.1966
+[Bandit] update: action=INCLUDE, reward=-0.1966, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.52, gamma=1.259183449977269 deltaLoss=0.0027, timeCost=1.00, lqp=0.3148 raw_reward=-0.1971, clipped_reward=-0.1971
+[Bandit] update: action=INCLUDE, reward=-0.1971, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.37, gamma=1.1842089038828427 deltaLoss=0.0027, timeCost=1.00, lqp=0.2961 raw_reward=-0.1915, clipped_reward=-0.1915
+[Bandit] update: action=INCLUDE, reward=-0.1915, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.48, gamma=1.238859105458653 deltaLoss=0.0027, timeCost=1.00, lqp=0.3097 raw_reward=-0.1956, clipped_reward=-0.1956
+[Bandit] update: action=INCLUDE, reward=-0.1956, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.1941416189746388 deltaLoss=0.0027, timeCost=1.00, lqp=0.2985 raw_reward=-0.1922, clipped_reward=-0.1922
+[Bandit] update: action=INCLUDE, reward=-0.1922, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.1960970485268076 deltaLoss=0.0027, timeCost=1.00, lqp=0.2990 raw_reward=-0.1924, clipped_reward=-0.1924
+[Bandit] update: action=INCLUDE, reward=-0.1924, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.39, gamma=1.195076735701654 deltaLoss=0.0027, timeCost=1.00, lqp=0.2988 raw_reward=-0.1923, clipped_reward=-0.1923
+[Bandit] update: action=INCLUDE, reward=-0.1923, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.187812137734219 deltaLoss=0.0027, timeCost=1.00, lqp=0.2970 raw_reward=-0.1918, clipped_reward=-0.1918
+[Bandit] update: action=INCLUDE, reward=-0.1918, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1891438289094318 deltaLoss=0.0027, timeCost=1.00, lqp=0.2973 raw_reward=-0.1919, clipped_reward=-0.1919
+[Bandit] update: action=INCLUDE, reward=-0.1919, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.1769834101273213 deltaLoss=0.0027, timeCost=1.00, lqp=0.2942 raw_reward=-0.1910, clipped_reward=-0.1910
+[Bandit] update: action=INCLUDE, reward=-0.1910, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1924366083041749 deltaLoss=0.0027, timeCost=1.00, lqp=0.2981 raw_reward=-0.1921, clipped_reward=-0.1921
+[Bandit] update: action=INCLUDE, reward=-0.1921, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.220824227074268 deltaLoss=0.0027, timeCost=1.00, lqp=0.3052 raw_reward=-0.1942, clipped_reward=-0.1942
+[Bandit] update: action=INCLUDE, reward=-0.1942, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.1783281896530762 deltaLoss=0.0027, timeCost=1.00, lqp=0.2946 raw_reward=-0.1911, clipped_reward=-0.1911
+[Bandit] update: action=INCLUDE, reward=-0.1911, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.31, gamma=1.1548336016948166 deltaLoss=0.0027, timeCost=1.00, lqp=0.2887 raw_reward=-0.1893, clipped_reward=-0.1893
+[Bandit] update: action=INCLUDE, reward=-0.1893, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.1881825722234836 deltaLoss=0.0027, timeCost=1.00, lqp=0.2970 raw_reward=-0.1918, clipped_reward=-0.1918
+[Bandit] update: action=INCLUDE, reward=-0.1918, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.2224891406927596 deltaLoss=0.0027, timeCost=1.00, lqp=0.3056 raw_reward=-0.1944, clipped_reward=-0.1944
+[Bandit] update: action=INCLUDE, reward=-0.1944, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.29, gamma=1.1450078218135928 deltaLoss=0.0027, timeCost=1.00, lqp=0.2863 raw_reward=-0.1886, clipped_reward=-0.1886
+[Bandit] update: action=INCLUDE, reward=-0.1886, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.58, gamma=1.2887967216492098 deltaLoss=0.0027, timeCost=1.00, lqp=0.3222 raw_reward=-0.1993, clipped_reward=-0.1993
+[Bandit] update: action=INCLUDE, reward=-0.1993, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.60, gamma=1.3009273512349162 deltaLoss=0.0027, timeCost=1.00, lqp=0.3252 raw_reward=-0.2003, clipped_reward=-0.2003
+[Bandit] update: action=INCLUDE, reward=-0.2003, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.62, gamma=1.3085840788878689 deltaLoss=0.0027, timeCost=1.00, lqp=0.3271 raw_reward=-0.2008, clipped_reward=-0.2008
+[Bandit] update: action=INCLUDE, reward=-0.2008, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.36, gamma=1.1801873607879134 deltaLoss=0.0027, timeCost=1.00, lqp=0.2950 raw_reward=-0.1912, clipped_reward=-0.1912
+[Bandit] update: action=INCLUDE, reward=-0.1912, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.43, gamma=1.2141098714725733 deltaLoss=0.0027, timeCost=1.00, lqp=0.3035 raw_reward=-0.1937, clipped_reward=-0.1937
+[Bandit] update: action=INCLUDE, reward=-0.1937, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.43, gamma=1.2172194032352845 deltaLoss=0.0027, timeCost=1.00, lqp=0.3043 raw_reward=-0.1940, clipped_reward=-0.1940
+[Bandit] update: action=INCLUDE, reward=-0.1940, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.75, gamma=1.3731100839971924 deltaLoss=0.0027, timeCost=1.00, lqp=0.3433 raw_reward=-0.2057, clipped_reward=-0.2057
+[Bandit] update: action=INCLUDE, reward=-0.2057, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.44, gamma=1.220075609554003 deltaLoss=0.0027, timeCost=1.00, lqp=0.3050 raw_reward=-0.1942, clipped_reward=-0.1942
+[Bandit] update: action=INCLUDE, reward=-0.1942, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.1762237514605542 deltaLoss=0.0027, timeCost=1.00, lqp=0.2941 raw_reward=-0.1909, clipped_reward=-0.1909
+[Bandit] update: action=INCLUDE, reward=-0.1909, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.37, gamma=1.183606516891918 deltaLoss=0.0027, timeCost=1.00, lqp=0.2959 raw_reward=-0.1915, clipped_reward=-0.1915
+[Bandit] update: action=INCLUDE, reward=-0.1915, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.46, gamma=1.2306850957577342 deltaLoss=0.0027, timeCost=1.00, lqp=0.3077 raw_reward=-0.1950, clipped_reward=-0.1950
+[Bandit] update: action=INCLUDE, reward=-0.1950, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.56, gamma=1.280036903156937 deltaLoss=0.0027, timeCost=1.00, lqp=0.3200 raw_reward=-0.1987, clipped_reward=-0.1987
+[Bandit] update: action=INCLUDE, reward=-0.1987, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.32, gamma=1.1576936299617522 deltaLoss=0.0027, timeCost=1.00, lqp=0.2894 raw_reward=-0.1895, clipped_reward=-0.1895
+[Bandit] update: action=INCLUDE, reward=-0.1895, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.49, gamma=1.243022117509141 deltaLoss=0.0027, timeCost=1.00, lqp=0.3108 raw_reward=-0.1959, clipped_reward=-0.1959
+[Bandit] update: action=INCLUDE, reward=-0.1959, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.27, gamma=1.1349211041934653 deltaLoss=0.0027, timeCost=1.00, lqp=0.2837 raw_reward=-0.1878, clipped_reward=-0.1878
+[Bandit] update: action=INCLUDE, reward=-0.1878, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.55, gamma=1.2758966446842797 deltaLoss=0.0027, timeCost=1.00, lqp=0.3190 raw_reward=-0.1984, clipped_reward=-0.1984
+[Bandit] update: action=INCLUDE, reward=-0.1984, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.50, gamma=1.2520465450245866 deltaLoss=0.0027, timeCost=1.00, lqp=0.3130 raw_reward=-0.1966, clipped_reward=-0.1966
+[Bandit] update: action=INCLUDE, reward=-0.1966, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.85, gamma=1.4263623660259281 deltaLoss=0.0027, timeCost=1.00, lqp=0.3566 raw_reward=-0.2097, clipped_reward=-0.2097
+[Bandit] update: action=INCLUDE, reward=-0.2097, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.82, gamma=1.4094526618776313 deltaLoss=0.0027, timeCost=1.00, lqp=0.3524 raw_reward=-0.2084, clipped_reward=-0.2084
+[Bandit] update: action=INCLUDE, reward=-0.2084, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.62, gamma=1.308785440325296 deltaLoss=0.0027, timeCost=1.00, lqp=0.3272 raw_reward=-0.2008, clipped_reward=-0.2008
+[Bandit] update: action=INCLUDE, reward=-0.2008, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.30, gamma=1.1504969137464622 deltaLoss=0.0027, timeCost=1.00, lqp=0.2876 raw_reward=-0.1890, clipped_reward=-0.1890
+[Bandit] update: action=INCLUDE, reward=-0.1890, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.73, gamma=1.3626006712604397 deltaLoss=0.0027, timeCost=1.00, lqp=0.3407 raw_reward=-0.2049, clipped_reward=-0.2049
+[Bandit] update: action=INCLUDE, reward=-0.2049, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.48, gamma=1.2383775158217114 deltaLoss=0.0027, timeCost=1.00, lqp=0.3096 raw_reward=-0.1956, clipped_reward=-0.1956
+[Bandit] update: action=INCLUDE, reward=-0.1956, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.173008153081453 deltaLoss=0.0027, timeCost=1.00, lqp=0.2933 raw_reward=-0.1907, clipped_reward=-0.1907
+[Bandit] update: action=INCLUDE, reward=-0.1907, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.66, gamma=1.328080241620158 deltaLoss=0.0027, timeCost=1.00, lqp=0.3320 raw_reward=-0.2023, clipped_reward=-0.2023
+[Bandit] update: action=INCLUDE, reward=-0.2023, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.59, gamma=1.2953362581224592 deltaLoss=0.0027, timeCost=1.00, lqp=0.3238 raw_reward=-0.1998, clipped_reward=-0.1998
+[Bandit] update: action=INCLUDE, reward=-0.1998, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.47, gamma=1.233818823205206 deltaLoss=0.0027, timeCost=1.00, lqp=0.3085 raw_reward=-0.1952, clipped_reward=-0.1952
+[Bandit] update: action=INCLUDE, reward=-0.1952, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.46, gamma=1.2296800102749617 deltaLoss=0.0027, timeCost=1.00, lqp=0.3074 raw_reward=-0.1949, clipped_reward=-0.1949
+[Bandit] update: action=INCLUDE, reward=-0.1949, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.38, gamma=1.187956611448754 deltaLoss=0.0027, timeCost=1.00, lqp=0.2970 raw_reward=-0.1918, clipped_reward=-0.1918
+[Bandit] update: action=INCLUDE, reward=-0.1918, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.68, gamma=1.3385923875869632 deltaLoss=0.0027, timeCost=1.00, lqp=0.3346 raw_reward=-0.2031, clipped_reward=-0.2031
+[Bandit] update: action=INCLUDE, reward=-0.2031, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.35, gamma=1.176184628724191 deltaLoss=0.0027, timeCost=1.00, lqp=0.2940 raw_reward=-0.1909, clipped_reward=-0.1909
+[Bandit] update: action=INCLUDE, reward=-0.1909, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.57, gamma=1.2850159966692072 deltaLoss=0.0027, timeCost=1.00, lqp=0.3213 raw_reward=-0.1991, clipped_reward=-0.1991
+[Bandit] update: action=INCLUDE, reward=-0.1991, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.52, gamma=1.2620242559057198 deltaLoss=0.0027, timeCost=1.00, lqp=0.3155 raw_reward=-0.1973, clipped_reward=-0.1973
+[Bandit] update: action=INCLUDE, reward=-0.1973, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.80, gamma=1.3989670194170607 deltaLoss=0.0027, timeCost=1.00, lqp=0.3497 raw_reward=-0.2076, clipped_reward=-0.2076
+[Bandit] update: action=INCLUDE, reward=-0.2076, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.37, gamma=1.1850803655453586 deltaLoss=0.0027, timeCost=1.00, lqp=0.2963 raw_reward=-0.1916, clipped_reward=-0.1916
+[Bandit] update: action=INCLUDE, reward=-0.1916, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5000, alphaNorm=0.58, gamma=1.2889393460797518 deltaLoss=0.0027, timeCost=1.00, lqp=0.3222 raw_reward=-0.1994, clipped_reward=-0.1994
+[Bandit] update: action=INCLUDE, reward=-0.1994, buffer_size=500
+[Intermission] calib done, deltaValLoss=0.0027

@@ -1,0 +1,47 @@
+self.logged_in_user: Guest
+global_value.REALTIME_BASE_FILE: account\Guest\real_time_data
+[Bandit] NeuralUCB loaded from account\Guest\bandit.pt, history_len=0, buffer_sizes=[0, 0, 0, 0]
+[DEBUG] Total notes: 16, N_Class: 4
+song name: Hanami
+now run_zero_level
+[DEBUG] Total notes: 16, N_Class: 4
+[CSV] Start write EEG data to account\Guest\real_time_data\eeg_record_20260507_010141.csv
+[INFO] Start read cygnus eeg...
+[ZeroLevel] Note#0 HIT correct lane=0
+[ZeroLevel] Note#1 HIT correct lane=2
+[ZeroLevel] Note#2 HIT correct lane=3
+[ZeroLevel] Note#3 HIT correct lane=0
+[ZeroLevel] Note#4 HIT correct lane=1
+[ZeroLevel] Note#5 HIT correct lane=2
+[ZeroLevel] Note#6 HIT correct lane=3
+[ZeroLevel] Note#7 HIT correct lane=3
+[ZeroLevel] Note#8 HIT correct lane=0
+[ZeroLevel] Note#9 HIT correct lane=1
+[ZeroLevel] Note#10 HIT correct lane=2
+[ZeroLevel] Note#11 HIT correct lane=2
+[ZeroLevel] Note#12 HIT correct lane=1
+[ZeroLevel] Note#13 MISS correct=1, gave=3
+[ZeroLevel] Note#14 HIT correct lane=3
+[ZeroLevel] Note#15 HIT correct lane=0
+song_start_time: 350.4705316
+song_end_time: 448.870638
+[INFO] End read cygnus eeg...
+[CSV] Saved EEG data to account\Guest\real_time_data\eeg_record_20260507_010141.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\Guest\\real_time_data\\eeg_record_20260409_020455.csv', 'account\\Guest\\real_time_data\\eeg_record_20260409_133120.csv', 'account\\Guest\\real_time_data\\eeg_record_20260409_133515.csv', 'account\\Guest\\real_time_data\\eeg_record_20260507_010141.csv']
+檔案已成功儲存至: account\Guest\real_time_data\eeg_record_20260507_010141.pt
+[INFO] pt_file_paths: ['account\\Guest\\real_time_data\\eeg_record_20260409_020455.pt', 'account\\Guest\\real_time_data\\eeg_record_20260409_133120.pt', 'account\\Guest\\real_time_data\\eeg_record_20260409_133515.pt', 'account\\Guest\\real_time_data\\eeg_record_20260507_010141.pt']
+RL_open: False
+name account\Guest\real_time_data\eeg_record_20260409_020455.pt
+name account\Guest\real_time_data\eeg_record_20260409_133120.pt
+name account\Guest\real_time_data\eeg_record_20260409_133515.pt
+name account\Guest\real_time_data\eeg_record_20260507_010141.pt
+valid_ratio: 0.25
+process data finish
+save_dir account\Guest\model\Trained_Model_v003
+training@@@Epoch 0/1 - loss: 1.4413, acc: 0.2495, val_loss: 1.4010, val_acc: 0.2699
+
+[INFO] Calibration done, copy model train-epoch0.pth to the account\Guest\model\base_model\Trained_Model_v003.pth
+[DEBUG] val_acc=0.2699, val_loss=1.4010
+[DEBUG] delta_acc=0.2699, deltaValLoss=-inf
+[Backend] 訓練完成！新模型: Trained_Model_v003

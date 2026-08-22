@@ -1,0 +1,88 @@
+[INFO] Logged in as: 0521_tsai_2
+[INFO] Log file: account\0521_tsai_2\log_dir\log_20260521_111312.txt
+[ExperienceReplayMemory] load_buffer: account\0521_tsai_2\hq_buffer.pt 不存在，跳過
+[MainController] hq_buffer 路徑: account\0521_tsai_2\hq_buffer.pt
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 16, N_Class: 4
+song name: Hanami
+now run_zero_level
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 16, N_Class: 4
+[CSV] Start write EEG data to account\0521_tsai_2\real_time_data\eeg_record_20260521_111315.csv
+song_start_time: 4209.3670284
+song_end_time: 4307.7698356
+[CSV] Saved EEG data to account\0521_tsai_2\real_time_data\eeg_record_20260521_111315.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0521_tsai_2\\real_time_data\\eeg_record_20260521_111315.csv']
+檔案已成功儲存至: account\0521_tsai_2\real_time_data\eeg_record_20260521_111315.pt
+[INFO] pt_file_paths: ['account\\0521_tsai_2\\real_time_data\\eeg_record_20260521_111315.pt']
+[model_interface] rerun_inference: predictor 模型尚未載入，跳過
+RL_open: False
+name account\0521_tsai_2\real_time_data\eeg_record_20260521_111315.pt
+valid_ratio: 0.25
+process data finish
+save_dir account\0521_tsai_2\model\Trained_Model_v001
+[TCP] Received: training@@@Epoch 1/60 - loss: 1.4406, acc: 0.2582, val_loss: 1.4159, val_acc: 0.2745
+[TCP] Received: training@@@Epoch 2/60 - loss: 1.4368, acc: 0.2549, val_loss: 1.4125, val_acc: 0.2794
+[TCP] Received: training@@@Epoch 3/60 - loss: 1.4357, acc: 0.2467, val_loss: 1.4117, val_acc: 0.2794
+[TCP] Received: training@@@Epoch 4/60 - loss: 1.4367, acc: 0.2451, val_loss: 1.4143, val_acc: 0.2598
+[TCP] Received: training@@@Epoch 5/60 - loss: 1.4493, acc: 0.2451, val_loss: 1.4128, val_acc: 0.2549
+[TCP] Received: training@@@Epoch 6/60 - loss: 1.4370, acc: 0.2173, val_loss: 1.4129, val_acc: 0.2451
+[TCP] Received: training@@@Epoch 7/60 - loss: 1.4267, acc: 0.2467, val_loss: 1.4115, val_acc: 0.2500
+[TCP] Received: training@@@Epoch 8/60 - loss: 1.4289, acc: 0.2271, val_loss: 1.4148, val_acc: 0.2549
+[TCP] Received: training@@@Epoch 9/60 - loss: 1.4287, acc: 0.2614, val_loss: 1.4162, val_acc: 0.2451
+[TCP] Received: training@@@Epoch 10/60 - loss: 1.4145, acc: 0.2876, val_loss: 1.4129, val_acc: 0.2451
+[TCP] Received: training@@@Epoch 11/60 - loss: 1.4391, acc: 0.2467, val_loss: 1.4164, val_acc: 0.2451
+[TCP] Received: training@@@Epoch 12/60 - loss: 1.4354, acc: 0.2549, val_loss: 1.4166, val_acc: 0.2402
+[TCP] Received: training@@@Epoch 13/60 - loss: 1.4254, acc: 0.2565, val_loss: 1.4174, val_acc: 0.2402
+[TCP] Received: training@@@Epoch 14/60 - loss: 1.4040, acc: 0.2990, val_loss: 1.4167, val_acc: 0.2304
+[TCP] Received: training@@@Epoch 15/60 - loss: 1.4167, acc: 0.2729, val_loss: 1.4179, val_acc: 0.2304
+[TCP] Received: training@@@Epoch 16/60 - loss: 1.4219, acc: 0.2827, val_loss: 1.4181, val_acc: 0.2304
+[TCP] Received: training@@@Epoch 17/60 - loss: 1.4155, acc: 0.2549, val_loss: 1.4196, val_acc: 0.2255
+[TCP] Received: training@@@Epoch 18/60 - loss: 1.4143, acc: 0.2598, val_loss: 1.4200, val_acc: 0.2108
+[TCP] Received: training@@@Epoch 19/60 - loss: 1.4050, acc: 0.2990, val_loss: 1.4215, val_acc: 0.2108
+[TCP] Received: training@@@Epoch 20/60 - loss: 1.3890, acc: 0.3007, val_loss: 1.4199, val_acc: 0.2108
+[TCP] Received: training@@@Epoch 21/60 - loss: 1.4158, acc: 0.2631, val_loss: 1.4237, val_acc: 0.2010
+[TCP] Received: training@@@Epoch 22/60 - loss: 1.4094, acc: 0.2680, val_loss: 1.4252, val_acc: 0.2108
+[TCP] Received: training@@@Epoch 23/60 - loss: 1.4032, acc: 0.2663, val_loss: 1.4255, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 24/60 - loss: 1.4001, acc: 0.2761, val_loss: 1.4268, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 25/60 - loss: 1.3823, acc: 0.2941, val_loss: 1.4308, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 26/60 - loss: 1.3859, acc: 0.2958, val_loss: 1.4264, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 27/60 - loss: 1.4151, acc: 0.2598, val_loss: 1.4296, val_acc: 0.2010
+[TCP] Received: training@@@Epoch 28/60 - loss: 1.4038, acc: 0.2794, val_loss: 1.4267, val_acc: 0.1912
+[TCP] Received: training@@@Epoch 29/60 - loss: 1.3804, acc: 0.2745, val_loss: 1.4299, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 30/60 - loss: 1.3801, acc: 0.3072, val_loss: 1.4308, val_acc: 0.2059
+[TCP] Received: training@@@Epoch 31/60 - loss: 1.4004, acc: 0.3023, val_loss: 1.4312, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 32/60 - loss: 1.4047, acc: 0.2778, val_loss: 1.4319, val_acc: 0.2059
+[TCP] Received: training@@@Epoch 33/60 - loss: 1.3727, acc: 0.3154, val_loss: 1.4324, val_acc: 0.2010
+[TCP] Received: training@@@Epoch 34/60 - loss: 1.3916, acc: 0.2827, val_loss: 1.4309, val_acc: 0.2108
+[TCP] Received: training@@@Epoch 35/60 - loss: 1.3815, acc: 0.3252, val_loss: 1.4357, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 36/60 - loss: 1.3880, acc: 0.2925, val_loss: 1.4346, val_acc: 0.1814
+[TCP] Received: training@@@Epoch 37/60 - loss: 1.3871, acc: 0.2925, val_loss: 1.4377, val_acc: 0.1765
+Early stopping triggered at epoch 36. Best val_loss: 1.4115
+
+[INFO] Calibration done, copy model train-epoch6.pth to the account\0521_tsai_2\model\base_model\Trained_Model_v001.pth
+[DEBUG] val_acc=0.2500, val_loss=1.4115
+[DEBUG] delta_acc=0.2500, deltaValLoss=-inf
+[Backend] 訓練完成！新模型: Trained_Model_v001
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 20, N_Class: 4
+song name: IRIS OUT
+[CSV] Start write EEG data to account\0521_tsai_2\real_time_data\eeg_record_20260521_111715.csv
+[DEBUG] 重新載入模型: account\0521_tsai_2\model\base_model\Trained_Model_v001.pth
+[INFO] Start predict loop...
+song_start_time: 4449.6440715
+song_end_time: 4592.3339504
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0521_tsai_2\real_time_data\eeg_record_20260521_111715.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0521_tsai_2\\real_time_data\\eeg_record_20260521_111315.csv', 'account\\0521_tsai_2\\real_time_data\\eeg_record_20260521_111715.csv']
+檔案已成功儲存至: account\0521_tsai_2\real_time_data\eeg_record_20260521_111715.pt
+[INFO] pt_file_paths: ['account\\0521_tsai_2\\real_time_data\\eeg_record_20260521_111315.pt', 'account\\0521_tsai_2\\real_time_data\\eeg_record_20260521_111715.pt']
+[model_interface] rerun_inference: eeg_record_20260521_111315.pt → 16 trials 已更新
+[model_interface] rerun_inference: eeg_record_20260521_111715.pt → 20 trials 已更新
+[model_interface] rerun_inference 完成，共更新 36 筆 trial
+RL_open: False
+name account\0521_tsai_2\real_time_data\eeg_record_20260521_111315.pt

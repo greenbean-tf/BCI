@@ -1,0 +1,75 @@
+[Bandit] NeuralContextualBandit 初始化完成
+  device            =cpu
+  nActions          =3
+  contextDim        =3
+  epsilon           =0.5
+  lambdaCost        =0.1
+  mu                =0.3
+  alp_ent_hyp       =1.0
+  weightEntropy     =0.5
+  rewardClipMin     =-2.0
+  rewardClipMax     =2.0
+
+[Bandit UpdateScheduler] 初始化完成
+ scoreThreshold=7.0
+
+[RL_interface] 初始化完成
+
+[Premium_RL_pretrain] 初始化完成 (高保真離線模擬器版)
+  pretrainEpochs    = 30
+  outputBanditPath  = D:\2026_BCI_-\combine_all_new\rl\rl_pretrain\pretrained_bandit.pt
+  device            = cpu
+  Bandit L2 Regularization (weight_decay) = 1e-4
+
+[Premium_RL_pretrain] 找到 2 個 .pt 資料檔案，開始載入與分析...
+  正在讀取檔案: new_3s_percy_test.pt
+  正在讀取檔案: new_3s_percy_train.pt
+[Premium_RL_pretrain] 成功載入 576 個實際試驗數據。
+[Premium_RL_pretrain] 正在計算全域生理統計量並進行 Context 正規化...
+  全域 Context EMA Mean: [9.43394612e-01 4.87029081e-01 1.31844141e+04]
+  全域 Context EMA Var:  [6.65183771e-02 8.97730778e-02 5.61918505e+07]
+[Premium_RL_pretrain] 正在啟用 BCI 高保真模擬器生成信用分配標籤...
+[Premium_RL_pretrain] 成功生成 1728 個靜態 (Context, Action, Reward) 數據點。
+[Premium_RL_pretrain] 靜態分割完成：訓練集=1296 筆，驗證集=432 筆。
+
+=== 開始訓練 Bandit Reward MLPs ===
+Epoch 01/30 | Train MSE: 0.019916 (1.9916e-02) | Valid MSE: 0.017369 (1.7369e-02)
+Epoch 02/30 | Train MSE: 0.017890 (1.7890e-02) | Valid MSE: 0.015402 (1.5402e-02)
+Epoch 03/30 | Train MSE: 0.018427 (1.8427e-02) | Valid MSE: 0.015848 (1.5848e-02)
+Epoch 04/30 | Train MSE: 0.017264 (1.7264e-02) | Valid MSE: 0.014795 (1.4795e-02)
+Epoch 05/30 | Train MSE: 0.015697 (1.5697e-02) | Valid MSE: 0.013341 (1.3341e-02)
+Epoch 06/30 | Train MSE: 0.013938 (1.3938e-02) | Valid MSE: 0.011899 (1.1899e-02)
+Epoch 07/30 | Train MSE: 0.012143 (1.2143e-02) | Valid MSE: 0.010262 (1.0262e-02)
+Epoch 08/30 | Train MSE: 0.010094 (1.0094e-02) | Valid MSE: 0.008462 (8.4623e-03)
+Epoch 09/30 | Train MSE: 0.008051 (8.0507e-03) | Valid MSE: 0.006594 (6.5939e-03)
+Epoch 10/30 | Train MSE: 0.005963 (5.9628e-03) | Valid MSE: 0.004900 (4.9004e-03)
+Epoch 11/30 | Train MSE: 0.004790 (4.7902e-03) | Valid MSE: 0.003920 (3.9201e-03)
+Epoch 12/30 | Train MSE: 0.004407 (4.4070e-03) | Valid MSE: 0.003657 (3.6571e-03)
+Epoch 13/30 | Train MSE: 0.003834 (3.8343e-03) | Valid MSE: 0.003186 (3.1865e-03)
+Epoch 14/30 | Train MSE: 0.003598 (3.5975e-03) | Valid MSE: 0.002968 (2.9678e-03)
+Epoch 15/30 | Train MSE: 0.003454 (3.4536e-03) | Valid MSE: 0.002854 (2.8538e-03)
+Epoch 16/30 | Train MSE: 0.002904 (2.9040e-03) | Valid MSE: 0.002421 (2.4207e-03)
+Epoch 17/30 | Train MSE: 0.003180 (3.1798e-03) | Valid MSE: 0.002644 (2.6439e-03)
+Epoch 18/30 | Train MSE: 0.003227 (3.2269e-03) | Valid MSE: 0.002678 (2.6777e-03)
+Epoch 19/30 | Train MSE: 0.002986 (2.9858e-03) | Valid MSE: 0.002513 (2.5129e-03)
+Epoch 20/30 | Train MSE: 0.002580 (2.5797e-03) | Valid MSE: 0.002175 (2.1754e-03)
+Epoch 21/30 | Train MSE: 0.002516 (2.5163e-03) | Valid MSE: 0.002116 (2.1157e-03)
+Epoch 22/30 | Train MSE: 0.002173 (2.1729e-03) | Valid MSE: 0.001852 (1.8524e-03)
+Epoch 23/30 | Train MSE: 0.002016 (2.0159e-03) | Valid MSE: 0.001758 (1.7581e-03)
+Epoch 24/30 | Train MSE: 0.002201 (2.2008e-03) | Valid MSE: 0.001941 (1.9410e-03)
+Epoch 25/30 | Train MSE: 0.002064 (2.0638e-03) | Valid MSE: 0.001825 (1.8248e-03)
+Epoch 26/30 | Train MSE: 0.001977 (1.9770e-03) | Valid MSE: 0.001770 (1.7700e-03)
+Epoch 27/30 | Train MSE: 0.002012 (2.0120e-03) | Valid MSE: 0.001795 (1.7946e-03)
+Epoch 28/30 | Train MSE: 0.001877 (1.8774e-03) | Valid MSE: 0.001705 (1.7052e-03)
+Epoch 29/30 | Train MSE: 0.001974 (1.9736e-03) | Valid MSE: 0.001797 (1.7972e-03)
+Epoch 30/30 | Train MSE: 0.001841 (1.8415e-03) | Valid MSE: 0.001694 (1.6938e-03)
+[Bandit] NeuralUCB saved to D:\2026_BCI_-\combine_all_new\rl\rl_pretrain\pretrained_bandit.pt
+
+[Premium_RL_pretrain] ==============================================
+[Premium_RL_pretrain] 預訓練完成！模型已儲存至：
+  -> D:\2026_BCI_-\combine_all_new\rl\rl_pretrain\pretrained_bandit.pt
+[Premium_RL_pretrain] Replay Buffers 大小: [440, 428, 428]
+[Premium_RL_pretrain] History 記錄長度: 1296
+[Premium_RL_pretrain] ==============================================
+[Premium_RL_pretrain] 收斂圖表已生成並儲存：
+  -> D:\2026_BCI_-\combine_all_new\rl\rl_pretrain\log\premium_mse_convergence.png

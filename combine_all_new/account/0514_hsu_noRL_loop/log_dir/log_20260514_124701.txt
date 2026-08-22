@@ -1,0 +1,406 @@
+[INFO] Logged in as: 0514_hsu_noRL_loop
+[INFO] Log file: account\0514_hsu_noRL_loop\log_dir\log_20260514_124701.txt
+[ExperienceReplayMemory] load_buffer: account\0514_hsu_noRL_loop\hq_buffer.pt 不存在，跳過
+[MainController] hq_buffer 路徑: account\0514_hsu_noRL_loop\hq_buffer.pt
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 16, N_Class: 4
+song name: Hanami
+now run_zero_level
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 16, N_Class: 4
+[CSV] Start write EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124713.csv
+song_start_time: 2773.9185284
+song_end_time: 2872.3236646
+[CSV] Saved EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124713.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124713.csv']
+檔案已成功儲存至: account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124713.pt
+[INFO] pt_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124713.pt']
+RL_open: False
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124713.pt
+valid_ratio: 0.25
+process data finish
+save_dir account\0514_hsu_noRL_loop\model\Trained_Model_v001
+[TCP] Received: training@@@Epoch 1/6 - loss: 1.4827, acc: 0.2418, val_loss: 1.3975, val_acc: 0.2255
+[TCP] Received: training@@@Epoch 2/6 - loss: 1.4750, acc: 0.2451, val_loss: 1.3935, val_acc: 0.2255
+[TCP] Received: training@@@Epoch 3/6 - loss: 1.4695, acc: 0.2565, val_loss: 1.3952, val_acc: 0.2353
+[TCP] Received: training@@@Epoch 4/6 - loss: 1.4398, acc: 0.2631, val_loss: 1.3956, val_acc: 0.2451
+[TCP] Received: training@@@Epoch 5/6 - loss: 1.4299, acc: 0.2582, val_loss: 1.3930, val_acc: 0.2549
+[TCP] Received: training@@@Epoch 6/6 - loss: 1.4326, acc: 0.2745, val_loss: 1.3917, val_acc: 0.2745
+
+[INFO] Calibration done, copy model train-epoch5.pth to the account\0514_hsu_noRL_loop\model\base_model\Trained_Model_v001.pth
+[DEBUG] val_acc=0.2745, val_loss=1.3917
+[DEBUG] delta_acc=0.2745, deltaValLoss=-inf
+[Backend] 訓練完成！新模型: Trained_Model_v001
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 20, N_Class: 4
+song name: IRIS OUT
+[CSV] Start write EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124923.csv
+[DEBUG] 重新載入模型: account\0514_hsu_noRL_loop\model\base_model\Trained_Model_v001.pth
+[INFO] Start predict loop...
+song_start_time: 2904.3130127
+song_end_time: 3047.0061529
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124923.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124923.csv']
+檔案已成功儲存至: account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124923.pt
+[INFO] pt_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124923.pt']
+RL_open: True
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124923.pt
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=0.0/7.0, total=1, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#0: action=DISCARD, shouldUpdate=False
+[Bandit] Rule-based override: LOW_WEIGHT (alpha=1.000, entropy=1.000)
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=0.3/7.0, total=2, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#1: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=0.3/7.0, total=3, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#2: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=0.3/7.0, total=4, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#3: action=DISCARD, shouldUpdate=False
+[Bandit] Rule-based override: LOW_WEIGHT (alpha=1.000, entropy=0.815)
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=0.6/7.0, total=5, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#5: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=0.6/7.0, total=6, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#6: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=0.9/7.0, total=7, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#8: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=0.9/7.0, total=8, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#10: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=1.2/7.0, total=9, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#12: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=1.2/7.0, total=10, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#13: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=1.2/7.0, total=11, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#15: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=1.5/7.0, total=12, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#16: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=1.8/7.0, total=13, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#17: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=1.8/7.0, total=14, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#18: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=1.8/7.0, total=15, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#19: action=DISCARD, shouldUpdate=False
+[DataLoader] collect_rl 完成: 15 筆記錄, shouldUpdate=False
+[DataLoader DEBUG] 最低保留比例觸發: 原保留=6/15, 最低要求=7 (50%), 隨機升級 1 個 DISCARD → INCLUDE
+[DataLoader] prepare_datasets_RL_v2: train=156, valid=51, replay=0, new_hq=1
+process data finish
+save_dir account\0514_hsu_noRL_loop\model\Calibed_Model_v002
+
+[INFO] Loaded checkpoint from account\0514_hsu_noRL_loop\model\base_model\Trained_Model_v001.pth
+[TCP] Received: training@@@Epoch 1/10 - loss: 1.4297, acc: 0.2244, val_loss: 1.4299, val_acc: 0.1961
+[TCP] Received: training@@@Epoch 2/10 - loss: 1.4096, acc: 0.2628, val_loss: 1.4223, val_acc: 0.2157
+[TCP] Received: training@@@Epoch 3/10 - loss: 1.3973, acc: 0.2500, val_loss: 1.4065, val_acc: 0.2549
+[TCP] Received: training@@@Epoch 4/10 - loss: 1.4085, acc: 0.2308, val_loss: 1.4084, val_acc: 0.2549
+[TCP] Received: training@@@Epoch 5/10 - loss: 1.4052, acc: 0.2372, val_loss: 1.3932, val_acc: 0.2745
+[TCP] Received: training@@@Epoch 6/10 - loss: 1.3710, acc: 0.2756, val_loss: 1.3801, val_acc: 0.3333
+[TCP] Received: training@@@Epoch 7/10 - loss: 1.4065, acc: 0.2051, val_loss: 1.3712, val_acc: 0.3529
+[TCP] Received: training@@@Epoch 8/10 - loss: 1.3784, acc: 0.3462, val_loss: 1.3642, val_acc: 0.4118
+[TCP] Received: training@@@Epoch 9/10 - loss: 1.3673, acc: 0.3269, val_loss: 1.3585, val_acc: 0.4314
+[TCP] Received: training@@@Epoch 10/10 - loss: 1.3536, acc: 0.2949, val_loss: 1.3432, val_acc: 0.4314
+
+[INFO] Calibration done, copy model ft-epoch9.pth to the account\0514_hsu_noRL_loop\model\base_model\Calibed_Model_v002.pth
+[DEBUG] val_acc=0.4314, val_loss=1.3432
+[DEBUG] delta_acc=0.1569, deltaValLoss=-0.0485
+[Backend] 訓練完成！新模型: Calibed_Model_v002
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.00, gamma=1.0 deltaLoss=-0.0485, timeCost=1.00, lqp=0.0000 raw_reward=-0.0515, clipped_reward=-0.0515
+[Bandit] update: action=DISCARD, reward=-0.0515, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=1.0000, alphaNorm=1.00, gamma=2.0 deltaLoss=-0.0485, timeCost=1.00, lqp=1.0000 raw_reward=-0.3515, clipped_reward=-0.3515
+[Bandit] update: action=LOW_WEIGHT, reward=-0.3515, buffer_size=1
+[Bandit] compute_reward:  meanEntropy=1.0000, alphaNorm=0.61, gamma=1.6101296947958192 deltaLoss=-0.0485, timeCost=1.00, lqp=0.8051 raw_reward=-0.2930, clipped_reward=-0.2930
+[Bandit] update: action=DISCARD, reward=-0.2930, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=1.00, gamma=1.0 deltaLoss=-0.0485, timeCost=1.00, lqp=0.0000 raw_reward=-0.0515, clipped_reward=-0.0515
+[Bandit] update: action=DISCARD, reward=-0.0515, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.8153, alphaNorm=1.00, gamma=1.815336789422842 deltaLoss=-0.0485, timeCost=1.00, lqp=0.7401 raw_reward=-0.2735, clipped_reward=-0.2735
+[Bandit] update: action=LOW_WEIGHT, reward=-0.2735, buffer_size=2
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.78, gamma=1.0 deltaLoss=-0.0485, timeCost=1.00, lqp=0.0000 raw_reward=-0.0515, clipped_reward=-0.0515
+[Bandit] update: action=DISCARD, reward=-0.0515, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.8648, alphaNorm=0.25, gamma=1.2181071874317224 deltaLoss=-0.0485, timeCost=1.00, lqp=0.5267 raw_reward=-0.2095, clipped_reward=-0.2095
+[Bandit] update: action=LOW_WEIGHT, reward=-0.2095, buffer_size=3
+[Bandit] compute_reward:  meanEntropy=0.4164, alphaNorm=0.70, gamma=1.2899385932727758 deltaLoss=-0.0485, timeCost=1.00, lqp=0.2685 raw_reward=-0.1321, clipped_reward=-0.1321
+[Bandit] update: action=DISCARD, reward=-0.1321, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.7116, alphaNorm=0.11, gamma=1.0809107570419079 deltaLoss=-0.0485, timeCost=1.00, lqp=0.3846 raw_reward=-0.1669, clipped_reward=-0.1669
+[Bandit] update: action=LOW_WEIGHT, reward=-0.1669, buffer_size=4
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.47, gamma=1.0 deltaLoss=-0.0485, timeCost=1.00, lqp=0.0000 raw_reward=-0.0515, clipped_reward=-0.0515
+[Bandit] update: action=DISCARD, reward=-0.0515, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=1.0000, alphaNorm=0.64, gamma=1.636996468755375 deltaLoss=-0.0485, timeCost=1.00, lqp=0.8185 raw_reward=-0.2971, clipped_reward=-0.2971
+[Bandit] update: action=DISCARD, reward=-0.2971, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5878, alphaNorm=0.20, gamma=1.1185151988544584 deltaLoss=-0.0485, timeCost=1.00, lqp=0.3287 raw_reward=-0.1501, clipped_reward=-0.1501
+[Bandit] update: action=LOW_WEIGHT, reward=-0.1501, buffer_size=5
+[Bandit] compute_reward:  meanEntropy=1.0000, alphaNorm=0.38, gamma=1.384151928813554 deltaLoss=-0.0485, timeCost=1.00, lqp=0.6921 raw_reward=-0.2591, clipped_reward=-0.2591
+[Bandit] update: action=LOW_WEIGHT, reward=-0.2591, buffer_size=6
+[Bandit] compute_reward:  meanEntropy=0.2465, alphaNorm=0.87, gamma=1.214718074710345 deltaLoss=-0.0485, timeCost=1.00, lqp=0.1497 raw_reward=-0.0964, clipped_reward=-0.0964
+[Bandit] update: action=DISCARD, reward=-0.0964, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.0887, alphaNorm=0.11, gamma=1.009415976298116 deltaLoss=-0.0485, timeCost=1.00, lqp=0.0448 raw_reward=-0.0649, clipped_reward=-0.0649
+[Bandit] update: action=INCLUDE, reward=-0.0649, buffer_size=465
+[Intermission] calib done, deltaValLoss=-0.0485
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 23, N_Class: 4
+song name: Jimishuo
+[CSV] Start write EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125253.csv
+[DEBUG] 重新載入模型: account\0514_hsu_noRL_loop\model\base_model\Calibed_Model_v002.pth
+[INFO] Start predict loop...
+song_start_time: 3114.2314159
+song_end_time: 3270.5112854
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125253.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_125253.csv']
+檔案已成功儲存至: account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125253.pt
+[INFO] pt_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_125253.pt']
+RL_open: True
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125253.pt
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=1.8/7.0, total=16, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#0: action=DISCARD, shouldUpdate=False
+[Bandit] Rule-based override: LOW_WEIGHT (alpha=1.000, entropy=0.861)
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=2.1/7.0, total=17, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#2: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=2.4/7.0, total=18, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#3: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.4/7.0, total=19, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#4: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.4/7.0, total=20, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#5: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=2.7/7.0, total=21, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#7: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.7/7.0, total=22, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#8: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.7/7.0, total=23, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#10: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.7/7.0, total=24, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#11: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.7/7.0, total=25, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#12: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.7/7.0, total=26, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#14: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=2.7/7.0, total=27, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#15: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=3.0/7.0, total=28, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#17: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=3.0/7.0, total=29, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#18: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=3.0/7.0, total=30, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#20: action=DISCARD, shouldUpdate=False
+[UpdateScheduler] record: action=LOW_WEIGHT, score=0.3, accumulated=3.3/7.0, total=31, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#21: action=LOW_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=DISCARD, score=0.0, accumulated=3.3/7.0, total=32, hq=0, shouldUpdate=False
+[DataLoader] collect_rl: Hit#22: action=DISCARD, shouldUpdate=False
+[DataLoader] collect_rl 完成: 17 筆記錄, shouldUpdate=False
+[DataLoader DEBUG] 最低保留比例觸發: 原保留=5/17, 最低要求=8 (50%), 隨機升級 3 個 DISCARD → INCLUDE
+[DataLoader] prepare_datasets_RL_v2: train=213, valid=70, replay=0, new_hq=3
+process data finish
+save_dir account\0514_hsu_noRL_loop\model\Calibed_Model_v003
+
+[INFO] Loaded checkpoint from account\0514_hsu_noRL_loop\model\base_model\Calibed_Model_v002.pth
+[TCP] Received: training@@@Epoch 1/10 - loss: 1.3981, acc: 0.2582, val_loss: 1.4070, val_acc: 0.1714
+[TCP] Received: training@@@Epoch 2/10 - loss: 1.4073, acc: 0.2770, val_loss: 1.4012, val_acc: 0.1857
+[TCP] Received: training@@@Epoch 3/10 - loss: 1.4052, acc: 0.2582, val_loss: 1.3998, val_acc: 0.1857
+[TCP] Received: training@@@Epoch 4/10 - loss: 1.3826, acc: 0.2723, val_loss: 1.3946, val_acc: 0.1857
+[TCP] Received: training@@@Epoch 5/10 - loss: 1.3731, acc: 0.3286, val_loss: 1.3919, val_acc: 0.1857
+[TCP] Received: training@@@Epoch 6/10 - loss: 1.4008, acc: 0.2817, val_loss: 1.3881, val_acc: 0.2000
+[TCP] Received: training@@@Epoch 7/10 - loss: 1.3776, acc: 0.2864, val_loss: 1.3848, val_acc: 0.2143
+[TCP] Received: training@@@Epoch 8/10 - loss: 1.3807, acc: 0.2958, val_loss: 1.3830, val_acc: 0.1857
+[TCP] Received: training@@@Epoch 9/10 - loss: 1.3767, acc: 0.2817, val_loss: 1.3778, val_acc: 0.1857
+[TCP] Received: training@@@Epoch 10/10 - loss: 1.3583, acc: 0.2958, val_loss: 1.3744, val_acc: 0.2000
+
+[INFO] Calibration done, copy model ft-epoch9.pth to the account\0514_hsu_noRL_loop\model\base_model\Calibed_Model_v003.pth
+[DEBUG] val_acc=0.2000, val_loss=1.3744
+[DEBUG] delta_acc=-0.2314, deltaValLoss=0.0313
+[Backend] 訓練完成！新模型: Calibed_Model_v003
+[Bandit] compute_reward:  meanEntropy=0.6329, alphaNorm=0.50, gamma=1.3193707394294052 deltaLoss=0.0313, timeCost=1.00, lqp=0.4175 raw_reward=-0.2565, clipped_reward=-0.2565
+[Bandit] update: action=INCLUDE, reward=-0.2565, buffer_size=466
+[Bandit] compute_reward:  meanEntropy=0.8610, alphaNorm=1.00, gamma=1.8610496788831568 deltaLoss=0.0313, timeCost=1.00, lqp=0.8012 raw_reward=-0.3716, clipped_reward=-0.3716
+[Bandit] update: action=LOW_WEIGHT, reward=-0.3716, buffer_size=7
+[Bandit] compute_reward:  meanEntropy=1.0000, alphaNorm=0.21, gamma=1.214596984642647 deltaLoss=0.0313, timeCost=1.00, lqp=0.6073 raw_reward=-0.3135, clipped_reward=-0.3135
+[Bandit] update: action=LOW_WEIGHT, reward=-0.3135, buffer_size=8
+[Bandit] compute_reward:  meanEntropy=0.6653, alphaNorm=0.16, gamma=1.1097526712629542 deltaLoss=0.0313, timeCost=1.00, lqp=0.3692 raw_reward=-0.2420, clipped_reward=-0.2420
+[Bandit] update: action=DISCARD, reward=-0.2420, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.7143, alphaNorm=0.47, gamma=1.3368124981027885 deltaLoss=0.0313, timeCost=1.00, lqp=0.4775 raw_reward=-0.2745, clipped_reward=-0.2745
+[Bandit] update: action=DISCARD, reward=-0.2745, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.9968, alphaNorm=0.16, gamma=1.1596544560701252 deltaLoss=0.0313, timeCost=1.00, lqp=0.5780 raw_reward=-0.3047, clipped_reward=-0.3047
+[Bandit] update: action=LOW_WEIGHT, reward=-0.3047, buffer_size=9
+[Bandit] compute_reward:  meanEntropy=0.8635, alphaNorm=0.74, gamma=1.6412084042164177 deltaLoss=0.0313, timeCost=1.00, lqp=0.7086 raw_reward=-0.3438, clipped_reward=-0.3438
+[Bandit] update: action=DISCARD, reward=-0.3438, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.6630, alphaNorm=0.18, gamma=1.1172894481280327 deltaLoss=0.0313, timeCost=1.00, lqp=0.3704 raw_reward=-0.2424, clipped_reward=-0.2424
+[Bandit] update: action=INCLUDE, reward=-0.2424, buffer_size=467
+[Bandit] compute_reward:  meanEntropy=0.7945, alphaNorm=0.56, gamma=1.4416480475280868 deltaLoss=0.0313, timeCost=1.00, lqp=0.5727 raw_reward=-0.3031, clipped_reward=-0.3031
+[Bandit] update: action=DISCARD, reward=-0.3031, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.9586, alphaNorm=0.82, gamma=1.7899739794550156 deltaLoss=0.0313, timeCost=1.00, lqp=0.8579 raw_reward=-0.3886, clipped_reward=-0.3886
+[Bandit] update: action=DISCARD, reward=-0.3886, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.7891, alphaNorm=0.21, gamma=1.1693994083379207 deltaLoss=0.0313, timeCost=1.00, lqp=0.4614 raw_reward=-0.2697, clipped_reward=-0.2697
+[Bandit] update: action=DISCARD, reward=-0.2697, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.8807, alphaNorm=0.30, gamma=1.2640137493356052 deltaLoss=0.0313, timeCost=1.00, lqp=0.5566 raw_reward=-0.2982, clipped_reward=-0.2982
+[Bandit] update: action=DISCARD, reward=-0.2982, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=1.0000, alphaNorm=0.14, gamma=1.1374418802961035 deltaLoss=0.0313, timeCost=1.00, lqp=0.5687 raw_reward=-0.3019, clipped_reward=-0.3019
+[Bandit] update: action=LOW_WEIGHT, reward=-0.3019, buffer_size=10
+[Bandit] compute_reward:  meanEntropy=0.5295, alphaNorm=0.65, gamma=1.3438270952443416 deltaLoss=0.0313, timeCost=1.00, lqp=0.3558 raw_reward=-0.2380, clipped_reward=-0.2380
+[Bandit] update: action=INCLUDE, reward=-0.2380, buffer_size=468
+[Bandit] compute_reward:  meanEntropy=0.4251, alphaNorm=0.20, gamma=1.0835352774764555 deltaLoss=0.0313, timeCost=1.00, lqp=0.2303 raw_reward=-0.2004, clipped_reward=-0.2004
+[Bandit] update: action=DISCARD, reward=-0.2004, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.4413, alphaNorm=0.04, gamma=1.0160284035749603 deltaLoss=0.0313, timeCost=1.00, lqp=0.2242 raw_reward=-0.1985, clipped_reward=-0.1985
+[Bandit] update: action=LOW_WEIGHT, reward=-0.1985, buffer_size=11
+[Bandit] compute_reward:  meanEntropy=0.4236, alphaNorm=0.34, gamma=1.145106390455365 deltaLoss=0.0313, timeCost=1.00, lqp=0.2426 raw_reward=-0.2040, clipped_reward=-0.2040
+[Bandit] update: action=DISCARD, reward=-0.2040, buffer_size=500
+[Intermission] calib done, deltaValLoss=0.0313
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 28, N_Class: 4
+song name: Dragostea Din Tei
+[CSV] Start write EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125759.csv
+[DEBUG] 重新載入模型: account\0514_hsu_noRL_loop\model\base_model\Calibed_Model_v003.pth
+[INFO] Start predict loop...
+song_start_time: 3419.9828439
+song_end_time: 3626.4318995
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125759.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124713.csv', 'account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124923.csv', 'account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_125253.csv', 'account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_125759.csv']
+檔案已成功儲存至: account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125759.pt
+[INFO] pt_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124713.pt', 'account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_124923.pt', 'account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_125253.pt', 'account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_125759.pt']
+RL_open: False
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124713.pt
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_124923.pt
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125253.pt
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_125759.pt
+valid_ratio: 0.25
+process data finish
+save_dir account\0514_hsu_noRL_loop\model\Trained_Model_v004
+[TCP] Received: training@@@Epoch 1/6 - loss: 1.4545, acc: 0.2501, val_loss: 1.3899, val_acc: 0.2736
+[TCP] Received: training@@@Epoch 2/6 - loss: 1.4275, acc: 0.2579, val_loss: 1.3894, val_acc: 0.2781
+[TCP] Received: training@@@Epoch 3/6 - loss: 1.4292, acc: 0.2573, val_loss: 1.3892, val_acc: 0.2781
+[TCP] Received: training@@@Epoch 4/6 - loss: 1.4133, acc: 0.2664, val_loss: 1.3863, val_acc: 0.2709
+[TCP] Received: training@@@Epoch 5/6 - loss: 1.4134, acc: 0.2688, val_loss: 1.3854, val_acc: 0.2763
+[TCP] Received: training@@@Epoch 6/6 - loss: 1.4066, acc: 0.2697, val_loss: 1.3854, val_acc: 0.2727
+
+[INFO] Calibration done, copy model train-epoch4.pth to the account\0514_hsu_noRL_loop\model\base_model\Trained_Model_v004.pth
+[DEBUG] val_acc=0.2763, val_loss=1.3854
+[DEBUG] delta_acc=0.0763, deltaValLoss=0.0109
+[Backend] 訓練完成！新模型: Trained_Model_v004
+[ExperienceReplayMemory] save_buffer: Dynamic_Buffer 為空，跳過
+[MainController] 歌曲結束: hq_buffer 已儲存
+[osu_parser] speed=0.8, travelTime=312.5ms, INITIAL_BLANK_MS=4312.5ms
+[DEBUG] Total notes: 28, N_Class: 4
+song name: Cha Cha Cha
+[CSV] Start write EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_130328.csv
+[DEBUG] 重新載入模型: account\0514_hsu_noRL_loop\model\base_model\Trained_Model_v004.pth
+[INFO] Start predict loop...
+song_start_time: 3749.6426689
+song_end_time: 3923.2566915
+[INFO] End predict loop...
+[CSV] Saved EEG data to account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_130328.csv
+Song end process data start
+[INFO] csv_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_130328.csv']
+檔案已成功儲存至: account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_130328.pt
+[INFO] pt_file_paths: ['account\\0514_hsu_noRL_loop\\real_time_data\\eeg_record_20260514_130328.pt']
+RL_open: True
+name account\0514_hsu_noRL_loop\real_time_data\eeg_record_20260514_130328.pt
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=5.3/7.0, total=33, hq=1, shouldUpdate=False
+[DataLoader] collect_rl: Hit#0: action=HIGH_WEIGHT, shouldUpdate=False
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=7.3/7.0, total=34, hq=2, shouldUpdate=True
+[DataLoader] collect_rl: Hit#1: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=9.3/7.0, total=35, hq=3, shouldUpdate=True
+[DataLoader] collect_rl: Hit#2: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=11.3/7.0, total=36, hq=4, shouldUpdate=True
+[DataLoader] collect_rl: Hit#3: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=13.3/7.0, total=37, hq=5, shouldUpdate=True
+[DataLoader] collect_rl: Hit#5: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=15.3/7.0, total=38, hq=6, shouldUpdate=True
+[DataLoader] collect_rl: Hit#6: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=17.3/7.0, total=39, hq=7, shouldUpdate=True
+[DataLoader] collect_rl: Hit#7: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=19.3/7.0, total=40, hq=8, shouldUpdate=True
+[DataLoader] collect_rl: Hit#9: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=21.3/7.0, total=41, hq=9, shouldUpdate=True
+[DataLoader] collect_rl: Hit#10: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=23.3/7.0, total=42, hq=10, shouldUpdate=True
+[DataLoader] collect_rl: Hit#11: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=25.3/7.0, total=43, hq=11, shouldUpdate=True
+[DataLoader] collect_rl: Hit#12: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=27.3/7.0, total=44, hq=12, shouldUpdate=True
+[DataLoader] collect_rl: Hit#13: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=29.3/7.0, total=45, hq=13, shouldUpdate=True
+[DataLoader] collect_rl: Hit#16: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=31.3/7.0, total=46, hq=14, shouldUpdate=True
+[DataLoader] collect_rl: Hit#17: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=33.3/7.0, total=47, hq=15, shouldUpdate=True
+[DataLoader] collect_rl: Hit#19: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=35.3/7.0, total=48, hq=16, shouldUpdate=True
+[DataLoader] collect_rl: Hit#21: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=37.3/7.0, total=49, hq=17, shouldUpdate=True
+[DataLoader] collect_rl: Hit#22: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=39.3/7.0, total=50, hq=18, shouldUpdate=True
+[DataLoader] collect_rl: Hit#24: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=41.3/7.0, total=51, hq=19, shouldUpdate=True
+[DataLoader] collect_rl: Hit#25: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=43.3/7.0, total=52, hq=20, shouldUpdate=True
+[DataLoader] collect_rl: Hit#26: action=HIGH_WEIGHT, shouldUpdate=True
+[UpdateScheduler] record: action=HIGH_WEIGHT, score=2.0, accumulated=45.3/7.0, total=53, hq=21, shouldUpdate=True
+[DataLoader] collect_rl: Hit#27: action=HIGH_WEIGHT, shouldUpdate=True
+[DataLoader] collect_rl 完成: 21 筆記錄, shouldUpdate=True
+[DataLoader] prepare_datasets_RL_v2: train=1591, valid=530, replay=0, new_hq=21
+process data finish
+save_dir account\0514_hsu_noRL_loop\model\Calibed_Model_v005
+
+[INFO] Loaded checkpoint from account\0514_hsu_noRL_loop\model\base_model\Trained_Model_v004.pth
+[TCP] Received: training@@@Epoch 1/10 - loss: 1.4055, acc: 0.2583, val_loss: 1.3915, val_acc: 0.2453
+[TCP] Received: training@@@Epoch 2/10 - loss: 1.3982, acc: 0.2703, val_loss: 1.3884, val_acc: 0.2434
+[TCP] Received: training@@@Epoch 3/10 - loss: 1.4011, acc: 0.2722, val_loss: 1.3853, val_acc: 0.2453
+[TCP] Received: training@@@Epoch 4/10 - loss: 1.3901, acc: 0.2696, val_loss: 1.3845, val_acc: 0.2509
+[TCP] Received: training@@@Epoch 5/10 - loss: 1.3968, acc: 0.2841, val_loss: 1.3816, val_acc: 0.2604
+[TCP] Received: training@@@Epoch 6/10 - loss: 1.3872, acc: 0.2791, val_loss: 1.3786, val_acc: 0.2585
+[TCP] Received: training@@@Epoch 7/10 - loss: 1.3830, acc: 0.2810, val_loss: 1.3784, val_acc: 0.2547
+[TCP] Received: training@@@Epoch 8/10 - loss: 1.3799, acc: 0.2684, val_loss: 1.3761, val_acc: 0.2509
+[TCP] Received: training@@@Epoch 9/10 - loss: 1.3823, acc: 0.2910, val_loss: 1.3736, val_acc: 0.2453
+[TCP] Received: training@@@Epoch 10/10 - loss: 1.3728, acc: 0.2816, val_loss: 1.3740, val_acc: 0.2396
+
+[INFO] Calibration done, copy model ft-epoch8.pth to the account\0514_hsu_noRL_loop\model\base_model\Calibed_Model_v005.pth
+[DEBUG] val_acc=0.2453, val_loss=1.3736
+[DEBUG] delta_acc=-0.0310, deltaValLoss=-0.0117
+[Backend] 訓練完成！新模型: Calibed_Model_v005
+[Bandit] compute_reward:  meanEntropy=0.5743, alphaNorm=0.32, gamma=1.1846535780819225 deltaLoss=-0.0117, timeCost=1.00, lqp=0.3402 raw_reward=-0.1903, clipped_reward=-0.1903
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1903, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.67, gamma=1.0 deltaLoss=-0.0117, timeCost=1.00, lqp=0.0000 raw_reward=-0.0883, clipped_reward=-0.0883
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.0883, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.7947, alphaNorm=0.07, gamma=1.052843778285171 deltaLoss=-0.0117, timeCost=1.00, lqp=0.4183 raw_reward=-0.2138, clipped_reward=-0.2138
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2138, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.0000, alphaNorm=0.80, gamma=1.0 deltaLoss=-0.0117, timeCost=1.00, lqp=0.0000 raw_reward=-0.0883, clipped_reward=-0.0883
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.0883, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5795, alphaNorm=0.48, gamma=1.2763601389551034 deltaLoss=-0.0117, timeCost=1.00, lqp=0.3698 raw_reward=-0.1992, clipped_reward=-0.1992
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1992, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.8711, alphaNorm=0.39, gamma=1.3353941175349606 deltaLoss=-0.0117, timeCost=1.00, lqp=0.5816 raw_reward=-0.2627, clipped_reward=-0.2627
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2627, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.5883, alphaNorm=0.61, gamma=1.3609704031481702 deltaLoss=-0.0117, timeCost=1.00, lqp=0.4004 raw_reward=-0.2084, clipped_reward=-0.2084
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2084, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.4694, alphaNorm=0.07, gamma=1.035112134984105 deltaLoss=-0.0117, timeCost=1.00, lqp=0.2430 raw_reward=-0.1611, clipped_reward=-0.1611
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1611, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.4729, alphaNorm=0.35, gamma=1.1639474127433025 deltaLoss=-0.0117, timeCost=1.00, lqp=0.2752 raw_reward=-0.1708, clipped_reward=-0.1708
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1708, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.7176, alphaNorm=0.29, gamma=1.2063412212249234 deltaLoss=-0.0117, timeCost=1.00, lqp=0.4328 raw_reward=-0.2181, clipped_reward=-0.2181
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2181, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.0817, alphaNorm=0.47, gamma=1.038277134733802 deltaLoss=-0.0117, timeCost=1.00, lqp=0.0424 raw_reward=-0.1010, clipped_reward=-0.1010
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1010, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.3312, alphaNorm=0.43, gamma=1.142321728151484 deltaLoss=-0.0117, timeCost=1.00, lqp=0.1892 raw_reward=-0.1450, clipped_reward=-0.1450
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1450, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.6578, alphaNorm=0.37, gamma=1.2405358175534045 deltaLoss=-0.0117, timeCost=1.00, lqp=0.4080 raw_reward=-0.2107, clipped_reward=-0.2107
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2107, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.3729, alphaNorm=0.60, gamma=1.2243317595842844 deltaLoss=-0.0117, timeCost=1.00, lqp=0.2283 raw_reward=-0.1567, clipped_reward=-0.1567
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1567, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.3769, alphaNorm=0.18, gamma=1.0676926235386923 deltaLoss=-0.0117, timeCost=1.00, lqp=0.2012 raw_reward=-0.1486, clipped_reward=-0.1486
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1486, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.6478, alphaNorm=0.50, gamma=1.3259458057932705 deltaLoss=-0.0117, timeCost=1.00, lqp=0.4295 raw_reward=-0.2171, clipped_reward=-0.2171
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2171, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.2593, alphaNorm=0.46, gamma=1.1199300523566895 deltaLoss=-0.0117, timeCost=1.00, lqp=0.1452 raw_reward=-0.1318, clipped_reward=-0.1318
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1318, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.3081, alphaNorm=0.34, gamma=1.1053822916768068 deltaLoss=-0.0117, timeCost=1.00, lqp=0.1703 raw_reward=-0.1393, clipped_reward=-0.1393
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1393, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.6890, alphaNorm=0.65, gamma=1.4480605802271114 deltaLoss=-0.0117, timeCost=1.00, lqp=0.4989 raw_reward=-0.2379, clipped_reward=-0.2379
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.2379, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.2708, alphaNorm=0.40, gamma=1.108909357665528 deltaLoss=-0.0117, timeCost=1.00, lqp=0.1502 raw_reward=-0.1333, clipped_reward=-0.1333
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1333, buffer_size=500
+[Bandit] compute_reward:  meanEntropy=0.1963, alphaNorm=0.51, gamma=1.100810920978901 deltaLoss=-0.0117, timeCost=1.00, lqp=0.1081 raw_reward=-0.1207, clipped_reward=-0.1207
+[Bandit] update: action=HIGH_WEIGHT, reward=-0.1207, buffer_size=500
+[Intermission] calib done, deltaValLoss=-0.0117
